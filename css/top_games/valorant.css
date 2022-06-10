@@ -1,8 +1,6 @@
 body {
-    background: var(--color-primary);
     position:relative;
     z-index: 0;
-    background-color: var(--color-primary);
 }
 
 #main {
@@ -50,11 +48,12 @@ header {
 }
 
 /* CONTENT */
-.content {
+.game {
     position: absolute;
     z-index: 1;
     padding: 50px 100px;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
 }
 
 /* GAME PICTURE & BUTTON */
@@ -79,13 +78,26 @@ header {
 }
 
 /* TABS */
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "spaces tabs";
+}
+
+.space {
+    width: 480px;
+    grid-area: spaces;
+}
+
 .tabs {
+    width: 90%;
+    grid-area: tabs;
     display: flex;
     flex-wrap: wrap;
     background: var(--color-text);
     box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
     border-radius: 20px;
-    margin: 220px 0 330px 30px;
+    margin: 50px;
     justify-content: space-between;
 }
 

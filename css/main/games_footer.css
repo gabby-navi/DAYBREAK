@@ -4,10 +4,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-primary);
+    background-color: #151515;
     position: relative;
-    z-index: -2;
-    position: fixed;
 }
 
 #grid {
