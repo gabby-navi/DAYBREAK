@@ -1,0 +1,71 @@
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.nav-links a {
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 2.5em;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+}
+
+.menu li { padding: 5px 10px; }
+
+.menu li:hover {
+    border-bottom: 3px solid var(--color-text);
+    transition: 0.3s ease;
+}
+
+.menu li.active { border-bottom: 3px solid var(--color-text); }
+input[type=checkbox] { display: none; }
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 1120px) {
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color: var(--color-primary);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+        margin: 5px 0;
+        z-index: 1;
+    }
+    
+    .menu li.active {
+        border-bottom: none;
+        background-color:#5C5C5C;
+        transition: 0.3s ease;
+    }
+    
+    .menu li + li { margin-top: 12px; }
+    
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    
+    .hamburger { display: block; }
+}

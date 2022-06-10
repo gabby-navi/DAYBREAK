@@ -1,0 +1,278 @@
+body {
+    background-image: url('/images/controller_bg.png');
+    background-repeat: repeat-y;
+}
+
+/* HEADER */
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    background: url('/images/top_games/bikerpubg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.header-txt {
+    text-align: center;
+    color: var(--color-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70vh;
+    padding: 8em 20px;
+    background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
+}
+
+h1 { font-size: 80px; }
+
+/*BUTTON TOP GAMES*/
+.btn {
+    color: var(--color-text);
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+    margin: 50px 10px 0 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+ 
+.btn:hover { 
+    background: #ddc700;
+}
+
+@media (max-width: 1290px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-txt {
+        padding: 10em 0;
+    }
+
+    h1 {
+        font-size: 45px;
+        padding: 0 20px;
+        line-height: 50px;
+    }
+    
+    p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+/* CONTENT */
+.valorant {
+    background: url('/images/top_games/valorantbg.jpg') no-repeat center center;
+    object-fit: cover;
+    padding: 100px;
+    border-radius: 0 0 100px 0;
+    height: 80vh;
+    margin: 150px 0;
+    position: relative;
+    border-radius: 0 0 100px 0;
+}
+
+.game-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%);
+    padding: 100px;
+    border-radius: 0 0 100px 0;
+}
+
+.game-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.game-img {
+    position: relative;
+    width: 25%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 0 100px;
+    border: 15px solid var(--color-text);
+    margin: 0 5%;
+}
+
+.game-text {
+    color: var(--color-text);
+    width: 60%;
+}
+
+.game-title {
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.callofduty {
+    padding: 100px 150px;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 150px;
+    background: url('/images/top_games/codbg.jpg') no-repeat center center;
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.minecraft {
+    padding: 100px 150px;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 150px;
+    background: url('/images/top_games/mc_bg.jpg') no-repeat center center;
+    object-fit: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.pubg {
+    padding: 100px 150px;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 150px;
+    background: url('/images/top_games/pubgbg.png') no-repeat center center;
+    object-fit: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.csgo {
+    padding: 100px 150px;
+    border-radius: 100px 0 100px 0;
+    margin-bottom: 150px;
+    background: url('/images/top_games/csbg.jpg') no-repeat center center;
+    object-fit: cover;
+    height: 80vh;
+    position: relative;
+}
+
+@media (max-width: 1880px) {
+    .header-txt {
+        padding: 3.4em 20px;
+    }
+    
+    .valorant, .callofduty, .minecraft, .pubg, .csgo {
+        height: 120vh;
+    }
+
+    .game-img {
+        width: 25%;
+        height: 500px;
+        border: 10px solid var(--color-text);
+    }
+
+    .game-gradient {
+        padding: 70px 50px;
+        height: 120vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-txt {
+        padding: 3.5em 20px;
+    }
+
+    .valorant, .callofduty, .minecraft, .pubg, .csgo {
+        height: 90vh;
+    }
+
+    .game-title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .game-img {
+        width: 25%;
+        height: 350px;
+        border: 10px solid var(--color-text);
+    }
+
+    .game-gradient {
+        padding: 70px 50px;
+        height: 90vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .game-img {
+        width: 30%;
+        height: 350px;
+        border: 10px solid var(--color-text);
+        margin: 0 3% 0 3%;
+    }
+
+    .game-gradient {
+        padding: 70px 50px ;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+
+/* BUTTON */
+.button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: var(--color-text);
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    max-width: fit-content;
+    will-change: transform;
+}
+
+.button:disabled {
+    pointer-events: none;
+}
+
+.button:hover {
+    color: var(--color-primary);
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#right-btn {
+    float: right;
+    margin-top: 50px;
+}
+
+
