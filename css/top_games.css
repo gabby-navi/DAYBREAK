@@ -30,7 +30,9 @@ header {
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
-h1 { font-size: 80px; }
+h1 {
+    font-size: 80px;
+}
 
 /*BUTTON TOP GAMES*/
 .btn {
@@ -49,8 +51,8 @@ h1 { font-size: 80px; }
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
- 
-.btn:hover { 
+
+.btn:hover {
     background: #ddc700;
 }
 
@@ -58,7 +60,7 @@ h1 { font-size: 80px; }
     h1 {
         font-size: 50px;
     }
-    
+
     p {
         font-size: 16px;
     }
@@ -74,7 +76,7 @@ h1 { font-size: 80px; }
         padding: 0 20px;
         line-height: 50px;
     }
-    
+
     p {
         font-size: 14px;
         padding: 0 20px;
@@ -178,8 +180,12 @@ h1 { font-size: 80px; }
     .header-txt {
         padding: 3.4em 20px;
     }
-    
-    .valorant, .callofduty, .minecraft, .pubg, .csgo {
+
+    .valorant,
+    .callofduty,
+    .minecraft,
+    .pubg,
+    .csgo {
         height: 120vh;
     }
 
@@ -200,7 +206,11 @@ h1 { font-size: 80px; }
         padding: 3.5em 20px;
     }
 
-    .valorant, .callofduty, .minecraft, .pubg, .csgo {
+    .valorant,
+    .callofduty,
+    .minecraft,
+    .pubg,
+    .csgo {
         height: 90vh;
     }
 
@@ -230,7 +240,7 @@ h1 { font-size: 80px; }
     }
 
     .game-gradient {
-        padding: 70px 50px ;
+        padding: 70px 50px;
     }
 
     .btn {
@@ -274,5 +284,3 @@ h1 { font-size: 80px; }
     float: right;
     margin-top: 50px;
 }
-
-
