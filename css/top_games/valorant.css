@@ -19,6 +19,15 @@ p {
     line-height: 1.5;
 }
 
+.specs p{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
 /* HEADER */
 #wrapper {
     margin: 0 auto;
