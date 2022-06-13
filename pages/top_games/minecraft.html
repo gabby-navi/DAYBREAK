@@ -12,23 +12,273 @@
         <link rel="stylesheet" href="/css/main/footer.css">
     </head>
     <body>
-        <nav class="navbar">
-            <div class="logo"><a href="/pages/home_page.html">DAYBREAK</a></div>
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <div class="menu">
-                    <li><a href="/pages/home_page.html">Home</a></li>
-                    <li class="active"><a href="/pages/top_games.html">Top Games</a></li>
-                    <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
-                    <li><a href="/pages/about_us.html">About Us</a></li>
-                    <li><a href="/pages/contact_us.html">Contact Us</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div id="main">
+            <nav class="navbar">
+                <div class="logo"><a href="/pages/home_page.html">DAYBREAK</a></div>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="/pages/home_page.html">Home</a></li>
+                        <li class="active"><a href="/pages/top_games.html">Top Games</a></li>
+                        <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
+                        <li><a href="/pages/about_us.html">About Us</a></li>
+                        <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                    </div>
+                </ul>
+            </nav>
 
-        <main>
-        </main>
+            <main>
+                <div class="wrapper">
+                    <header>
+                        <div class="header-txt">
+                            <div id="game-title">Minecraft</div>
+                        </div>
+                        <div class="game">
+                            <div class="game-img">
+                                <img class="game-image" src="/images/top_games/tp_minecraft.jpg" alt="Minecraft thumbnail">
+                                <div class="container-absolute">
+                                    <div class="rank">
+                                        <div class="ranking">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://www.minecraft.net/en-us/download" target="_blank"><button class="game-btns" id="download">Download Minecraft</button></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <div class="space"></div>
+                        <div class="tabs">
+                            <!-- OVERVIEW -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="minecraft-overview" checked/>
+                            <label class="tabs-label" style="line-height: 35px;" for="minecraft-overview">Overview</label>
+                            <div class="tabs-content">
+                                <h1>What is Minecraft?</h1>
+                                <p>Minecraft is an action-adventure sandbox title that offers platers a limitless world that they can explore and create with their heart’s content.</p>
+                                <hr>
+                                <p>Trying to define Minecraft is difficult. From its early days of simple mining and crafting, so much more has been added that at times it can feel like a completely different game. In essence, Minecraft is still an action-adventure sandbox title, offering players a limitless world they can explore to their heart’s content.</p>
+                                <p>Your team is either set to attack or defend, with the attackers planting a "spike" (essentially a bomb) that the other team need to then defuse or, preferably, prevent you from planting in the first place.</p>
+                                <p>It offers an array of different modes, perfect for almost any type of gamer. Are you more of a creative person? You’ll likely enjoy the endless playground it has to offer, allowing you to build anything you can imagine. Or perhaps you’re looking for more of a challenge. You can try to last in its survival mode, as you battle against the creatures of the night.</p>
+                                <p>There’s certainly more to Minecraft than meets the eye, and its blocky appearance makes it seem like a deceptively simple adventure. If you’ve never played Minecraft — or if you’re thinking about returning from a long hiatus — you’ll be impressed by how much it has to offer, and the kind of game it has become. Not only has it evolved tremendously since it released, but it also went on to become one of the bestselling games of all time.</p>
+                                
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="Read more: https://www.digitaltrends.com/gaming/what-is-minecraft/" target="_blank">What is Minecraft?</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- GAME INFORMATION -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="minecraft-gameinfo"/>
+                            <label class="tabs-label" for="minecraft-gameinfo">Game<br>Information</label>
+                            <div class="tabs-content" id="gameinfo-content">
+                                <div class="vertical-tabs">
+                                    <input class="vtabs" type="radio" name="slider" checked id="GameEditions">
+                                    <input class="vtabs" type="radio" name="slider" id="GameModes">
+
+                                    <div class="tabs-list">
+                                        <label for="GameEditions" class="GameEditions">Game Editions</label>
+                                        <label for="GameModes" class="GameModes">Game Modes</label>
+                                        <div class="slider"></div>
+                                    </div>
+                                    <div class="text-content">
+                                        <!-- Game Editions -->
+                                        <div class="GameEditions text">
+                                            <h1>Game Editions</h1>
+                                            <p>Minecraft have different versions of the game available on  many platforms. There are Minecraft:Jave Edition, or Minecraft for mobile devices, Windows, Apple, Xbox, Nintendo Switch, Nintendo Wii and PlayStation.</p>
+                                            <hr>
+                                            
+                                            <h3>Minecraft Classic</h3>
+                                            <p>The original, F2P version of Minecraft. Available on Windows, Mac and Linux. Free-to-play.</p>
+
+                                            <h3>Minecraft: Java Edition</h3>
+                                            <p>No cross-platform play with Bedrock. Available on Windows, Mac and Linux. Priced $26.95 on Minecraft.net.</p>
+                                            
+                                            <h3>Minecraft: Education Edition</h3>
+                                            <p>Developed for schools, camps and clubs, with features to create and deliver lessons for all subjects. Available on Windows, Mac, iPad and Chromebook. Priced $5-$12 per user/year.</p>
+
+                                            <h3>Minecraft: PI Edition</h3>
+                                            <p>Designed for teaching and tinkering. Uses the platform Raspberry PI. Free-to-play.</p>
+                                            
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://help.minecraft.net/hc/en-us/articles/360034753992-Different-Minecraft-Editions" target="_blank">Different Minecraft Editions</a></em></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Game Modes -->
+                                        <div class="GameModes text">
+                                            <h1>Game Modes</h1>
+                                            <p>Minecraft has three features: Creative and  Survival Game mode. There is also Hardcore Game Mode, Adventure Mode and Spectator Mode which is only available only on Java.</p>
+                                            <hr>
+
+                                            <h3>Creative Mode</h3>
+                                            <p>In creative mode the player has all the resources available in the item selection tabs and the survival selection tab. You can also destroy blocks instantly including those which would normally be indestructible. Players like this mode because of the freedom of imagination. The ability to create anything form architectural structures to roller coasters.</p>
+
+                                            <h3>Included in Creative mode:</h3>
+                                                <ul>
+                                                    <li> No hunger bar</li>
+                                                    <li> No health bar</li>
+                                                    <li> Single use items are not consumed</li>
+                                                    <li> The use of the search bar</li>
+                                                    <li> Double tap jump to fly</li>
+                                                </ul>
+
+                                                <h3>Survival Mode</h3>
+                                                <p>Survival mode is where the player must collect resources, build structures while surviving in their generated world. You can interact with the local villagers, and at night defend against mobs that attack on sight. Unlike in creative mode, you must work for everything. There are no unlimited blocks. Activities overtime chip away at your health and hunger bar. </p>
+
+                                                <h3>Adventure Mode (Java Edition and Bedrock)</h3>
+                                                <p>Adventure mode has limited features to preserve adventure maps from being changed. In this mode, you will not be able to fly. Also, blocks cannot be destroyed by hand, but rather you must use an item with the CanDestroy tag to destroy a block. Blocks can only be placed if the block has the CanPlaceOn tag. When you play in this mode, you will have a health bar, a hunger bar, and an experience bar. You will be able to kill mobs and hostile mobs will attack you. You will take damage and can die in the game. </p>
+                                                
+                                                <h3>Spectator Mode (Java Edition)</h3>
+                                                <p>Spectator mode is only available in Minecraft: Java Edition. It was first introduced in Minecraft 1.8 to allow players to fly around and observe the Minecraft world. Players in this mode cannot interact with anything in the game but can fly through solid objects. When you play in this mode, you will not have a health bar, a hunger bar, or an experience bar. You will not be able to kill mobs, take damage or die in the game and you will not be visible to players in Survival mode.  </p>
+                                                
+                                                <h3>Hardcore Mode (Java Edition)</h3>
+                                                <p>The same as survival mode, however the game is set to the hardest difficulty, and with only one life. The hearts look slightly different in the shading. If you die in this mode, you will no longer have access to the game world, and you will have to delete it manually. This mode is for those who want a true challenge and like the more realistic feel - so be extra careful when playing in Hardcore mode!  </p>
+
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://help.minecraft.net/hc/en-us/articles/360058743992-Minecraft-Differences-Between-Creative-Survival-and-Hardcore-Game-Modes" target="_blank">Differences Between Creative, Survival, and Hardcore Game Modes</a></em></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- RELEASE DATE -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="minecraft-release"/>
+                            <label class="tabs-label" for="minecraft-release">Release<br>Date</label>
+                            <div class="tabs-content">
+                                <h1>Release Date</h1>
+                                <p>Minecraft Classic PC Version was Released on May 16, 2009. However, the full release of Minecraft was Released on November 18, 2011.</p>
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://www.imdb.com/title/tt2011970/releaseinfo" target="_blank">Minecraft: Release Date</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- SYSTEM REQUIREMENTS -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="minecraft-system"/>
+                            <label class="tabs-label" for="minecraft-system">System<br>Requirements</label>
+                            <div class="tabs-content">
+                                <h1>System Requirements</h1>
+                                <div class="system-cards">
+                                    <h3>MINIMUM SPECS</h3>
+                                    <div class="specifications">
+                                        <div class="specs">
+                                            <h4>OPERATING SYSTEM</h4>
+                                            <p>Windows 7 or later 64-bit</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>CPU</h4>
+                                            <p>Intel Core i3 3210 (Intel)<br>
+                                            AMD A8 7600 APU (AMD)</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>GPU</h4>
+                                            <p>Intel HD Graphics 4000<br>
+                                            AMD Radeon R5 Series</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>HDD</h4>
+                                            <p>At least 1GB for game<br>core,
+                                                maps and other files</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>RAM</h4>
+                                            <p>4GB</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>Screen Resolution</h4>
+                                            <p>1024 x 768 or better</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="system-cards">
+                                    <h3>RECOMMENDED SPECS</h3>
+                                    <div class="specifications">
+                                        <div class="specs">
+                                            <h4>OPERATING SYSTEM</h4>
+                                            <p>Windows 10 or later<br>64-bit</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>CPU</h4>
+                                            <p>Intel Core i5 4690 (Intel)<br>
+                                            AMD A10 7800 (AMD)</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>GPU</h4>
+                                            <p>NVIDIA GeForce 700 Series<br>
+                                            AMD Radeon Rx 200 Series</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>HDD</h4>
+                                            <p>4 GB (SSD <br>recommended)
+                                                available space</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>RAM</h4>
+                                            <p>8GB</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>Screen Resolution</h4>
+                                            <p>1024 x 768 or better</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href=" https://www.minitool.com/backup-tips/minecraft-system-requirements.html" target="_blank">Minecraft: System Requirements</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- BEGINNER'S GUIDE -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="minecraft-beginner"/>
+                            <label class="tabs-label" for="minecraft-beginner">Beginner's<br>Guide</label>
+                            <div class="tabs-content">
+                                <h1>Beginner's Guide</h1>
+
+                                <h3>Menu Exploration</h3>
+                                <p>How to customize your in-game character skin:</p>
+                                    <ul>
+                                        <li> Click on ‘Profile’ in the main menu when the game launches. </li>
+                                        <li> Hover over a grayed-out character and click ‘Create Character’.</li>
+                                        <li> From here you will be presented with a character customizer which you can click around and change your characters appearance to your liking.</li>
+                                        <li> All changes are saved automatically after any adjustments, you can back out and use your character you just created.</li>
+                                        <li> If you would like to delete a character, simply hover over or select which character you would like to delete by pressing the left or right arrows and click on the trash can looking icon near the create character or edit character button. </li>
+                                    </ul>
+                                
+                                <h3>The Marketplace</h3>
+                                    <ul>
+                                        <li> You can access the marketplace from the main menu located underneath the settings menu.  </li>
+                                        <li> Here you can view purchasable Add-Ons that can be added to your game. Feel free to browse the marketplace and find new and customized content created by us and our community! </li>  
+                                    </ul>
+                                
+                                <h3>Settings</h3>
+                                <p>Here are some key settings you may want to toggle or adjust when first starting out:</p>
+                                    <ul>
+                                        <li> If you would like to rebind default controls, you can do that under the ‘Keyboard Layout’ in the keyboard & mouse section in general.  </li>
+                                        <li> Under the general section in video, scrolling down you will find the ‘Render Distance’ setting. If you are experiencing frame rate lag, adjusting this to a lower number will usually result in better performance.  </li>
+                                        <li> If you would like to view custom skins, you will have to turn off ‘Only Allow Trusted Skins’ which is located in the profile settings. </li>
+                                    </ul>
+
+                                <h3>Starting Objectives</h3>
+                                <p>Here are some beginner tips to give you more help if you are having trouble figuring out how to survive! </p>
+                                    <ul>
+                                        <li> Collect resources! Grabbing wood is essential as you need wood to create tools and weapons. Coal would also be ideal to create torches and fuel for cooking if you happen to collect any raw food or ore. </li>
+                                        <li> You will need to create a crafting table which can be done by turning your logs into planks, simply place the logs in the crafting area and you will see the output. Four planks are needed to craft a workbench.  </li>
+                                        <li> Once you have a crafting bench (preferably in a safe area where you plan to create a shelter or house, creating a door is essential for entry and departure. You will need 6 planks to craft one. </li>
+                                        <li> Torches can be crafted with sticks anfd coal or charcoal, by placing sticks on the bottom and a coal or charcoal above it. Hostile mobs do not like to spawn near light so placing them in and around your house is a good strategy. </li>
+                                        <li> To cook food and smelt ores, crafting a furnace is essential. You will need 8 cobblestone to craft one.  </li>
+                                        <li> After you have created a furnace, to mine ores such as redstone, diamonds, or obsidian you will need higher tier tools to break them. You can create an iron pickaxe by finding raw iron in a cave or on a hillside. This raw iron must be smelted using a furnace. Once that is complete, you can put the newly created ore back in your furnace along with some coal. You will need 3 iron ingots and 2 sticks for 1 iron pickaxe. </li>
+                                        <li> After you have created a house make sure to create a bed to set your spawn point and set the time of day to the morning if you decide to sleep at night. If you rest in a bed it will set your respawn point. To craft a bed, you will need 3 wool and 3 planks. You can find wool by either shearing sheep or crafting wool from string. Sheep will also drop wool upon death. </li>
+                                        <li> Swords are essential for defending yourself from hostile mobs and can be crafted with wood, stone, iron, gold, and diamond. A diamond sword can be upgraded to a Netherite sword by using a smithing table to fuse the Netherite ingot with the diamond sword. </li>
+                                    </ul>
+                                
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://help.minecraft.net/hc/en-us/articles/360059154851-Minecraft-Beginners-Guide" target="_blank">Minecraft: Beginner's Guide</a></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
         <footer>
             <div id="grid">
