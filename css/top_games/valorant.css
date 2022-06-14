@@ -73,6 +73,8 @@ header {
     border-radius: 0 0 0 100px;
     border: 15px solid var(--color-text);
     height: 500px;
+    width: 370px;
+    object-fit: cover;
 }
 
 .container-absolute {
@@ -94,7 +96,6 @@ header {
     font-weight: 800;
     color: var(--color-text);
     font-size: 40px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);

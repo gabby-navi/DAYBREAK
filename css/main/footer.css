@@ -7,6 +7,10 @@ footer {
     background-color: #151515;
 }
 
+footer p {
+    margin-top: auto;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

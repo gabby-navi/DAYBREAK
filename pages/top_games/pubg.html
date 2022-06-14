@@ -12,39 +12,419 @@
         <link rel="stylesheet" href="/css/main/footer.css">
     </head>
     <body>
-        <nav class="navbar">
-            <div class="logo">DAYBREAK</div>
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <div class="menu">
-                    <li><a href="/pages/home_page.html">Home</a></li>
-                    <li class="active"><a href="/pages/top_games.html">Top Games</a></li>
-                    <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
-                    <li><a href="/pages/about_us.html">About Us</a></li>
-                    <li><a href="/pages/contact_us.html">Contact Us</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div id="main">
+            <nav class="navbar">
+                <div class="logo">DAYBREAK</div>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="/pages/home_page.html">Home</a></li>
+                        <li class="active"><a href="/pages/top_games.html">Top Games</a></li>
+                        <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
+                        <li><a href="/pages/about_us.html">About Us</a></li>
+                        <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <main>
+                <div class="wrapper">
+                    <header>
+                        <div class="header-txt">
+                            <div id="game-title">PUBG</div>
+                        </div>
+                        <div class="game">
+                            <div class="game-img">
+                                <img class="game-image" src="/images/top_games/tp_pubg.jpg" alt="PUBG thumbnail">
+                                <div class="container-absolute">
+                                    <div class="rank">
+                                        <div class="ranking">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://asia.battlegrounds.pubg.com/en/" target="_blank"><button class="game-btns" id="download">Download PUBG</button></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <div class="space"></div>
+                        <div class="tabs">
+                            <!-- OVERVIEW -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="pubg-overview" checked/>
+                            <label class="tabs-label" style="line-height: 35px;" for="pubg-overview">Overview</label>
+                            <div class="tabs-content">
+                                <h1>What is PUBG?</h1>
+                                <p>PUBG is a multiplayer battle royale game in which players are dropped onto an island and compete to be the last one standing.</p>
+                                <hr>
+                                <p>PlayerUnknown's Battlegrounds (more commonly referred to as PUBG) is a multiplayer online battle royale game published and developed by the South Korean company Bluehole. Similar to other popular games on the esport scene, PUBG is also based on a mod created for ARMA 2 called “DayZ: Battle Royale” by Brendan “PlayerUnknown” Greene.</p>
+                                <p>The whole concept of a Battle Royale game mode is heavily inspired by the Japanese film “Battle Royale” in which a group of students are transferred to an island and forced to fight to death by their government. The game was released for Microsoft Windows via the Steam platform, and it was initially released as an early access game in March 2017. The game was fully developed and released on December 20, 2017. Ever since, it has had several releases on different platforms, such as PS4 and Xbox One but also for mobile devices.
+                                </p>
+                                <p>PlayerUnknown's Battlegrounds sends up to 100 players to an island via air transfer and it's up to all individual players to decide when to parachute onto the island where they instantly need to scavenge and loot buildings and smaller compounds for weapons and equipment that they need to use for surviving and eliminating their enemies. In early game, the map is very big, but the playable area is slowly decreasing over time.
+                                </p>
+                                <p>Being outside the playable area will slowly inflict damage on players until they either die or manage to run into the playable area before all their health is lost. The game can be played in Solo, Duo or Squad mode with up to 4 players. The goal of the game is obviously to be the last one standing to get the win.
+                                </p>
+                                <p>It's a very intense and exciting game which will keep you on your toes from start to finish. It also forces players to be more cautious and strategic than in your general run-and-gun shooter game. The game was praised on its release, even though it was released with a list of irritating bugs and server issues, it still managed to get a really good traction via big twitch streamers that popularized the game very quickly.</p>
+                        
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://www.esportsguide.com/guide/a-basic-introduction-to-pubg" target="_blank">What is PUBG?</a></em></p>
+                                </div>
+                            </div>
 
-        <main>
-        </main>
+                            <!-- GAME INFORMATION -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="pubg-gameinfo"/>
+                            <label class="tabs-label" for="pubg-gameinfo">Game<br>Information</label>
+                            <div class="tabs-content" id="gameinfo-content">
+                                <div class="vertical-tabs">
+                                    <input class="ptabs" type="radio" name="slider" checked id="characters">
+                                    <input class="ptabs" type="radio" name="slider" id="gunplay">
+                                    <input class="ptabs" type="radio" name="slider" id="maps">
+                                        <div class="tabs-list">
+                                        <label for="characters" class="characters">Characters</label>
+                                        <label for="gunplay" class="gunplay">Gunplay</label>
+                                        <label for="maps" class="maps">Maps</label>
+                                        
+                                        <div class="slider"></div>
+                                    </div>
+                                    <div class="text-content">
+                                        <!-- CHARACTERS -->
+                                        <div class="characters text">
+                                            <h1>Characters</h1>
+                                            <p>Battle Royale consists of 100 online players that could choose among 11 characters and could easily customize them based on what they prefer.</p>
+                                            <hr>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Alexander_Lindh.webp" alt="">
+                                                    <div class="name-label">ALEXANDER LINDH</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Bogdan_Petrovic.webp" alt="">
+                                                    <div class="name-label">BOGDAN BETROVIC</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Duncan_Slade.webp" alt="">
+                                                    <div class="name-label">DUNCAN SLADE</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Hector_Ochoa.webp" alt="">
+                                                    <div class="name-label">HECTOR OCHOA</div>
+                                                </div>      
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Jonathan_Kamau.webp" alt="">
+                                                    <div class="name-label">JONATHAN KAMAU</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Julie_Skels.webp" alt="">
+                                                    <div class="name-label">JULIE SKWELS</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Kangjae_Ma.webp" alt="">
+                                                    <div class="name-label">KANGJAE MA</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Madison_Malholtra.webp" alt="">
+                                                    <div class="name-label">MADISON MALHOLTRA</div>
+                                                </div> 
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Pavel_Dvorak.webp" alt="">
+                                                    <div class="name-label">PAVEL DVORAK</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Sadiya_Qureshi.webp" alt="">
+                                                    <div class="name-label">SADIYA QURESHI</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_characters/Sergei_Kalimnick.webp" alt="">
+                                                    <div class="name-label">SERGEI KALIMNICK</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <div class="filler"></div>
+                                                </div> 
+                                                <div class="source">
+                                                    <p><strong>Read more: </strong><em><a href=" https://pubg.fandom.com/wiki/Category:Characters/" target="_blank">PUBG: Characters</a></em></p>
+                                                </div>                      
+                                            </div>
+                                        </div>
+
+                                        <!-- GUNPLAY -->
+                                        <div class="gunplay text">
+                                            <h1>Gunplay</h1>
+                                            <p>There are 18 weapons to choose from in PUBG Battlegrounds. Each have their own capabilities and strengths that players could easily adapt to. there are also weapons that are semi-automatic which is good for players who are just beginning.</p>
+                                            <hr>
+                                            <h3>AR</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/ar_beryl.png" alt="">
+                                                    <div class="name-label">BERYL</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/ar_m416.png" alt="">
+                                                    <div class="name-label">M416</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/ar_akm.png" alt="">   
+                                                    <div class="name-label">AKM</div>
+                                                </div>                                         
+                                            </div>
+                                            <h3>DMR</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/dmr_slr.png" alt="">
+                                                    <div class="name-label">SLR</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/dmr_sks.png" alt="">
+                                                    <div class="name-label">SKS</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/dmr_mini14.png" alt="">   
+                                                    <div class="name-label">MINI14</div> 
+                                                </div>                                  
+                                            </div>
+                                            <h3>SR</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/sr_kar98k.png" alt="">
+                                                    <div class="name-label">KAR98K</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/sr_m24.png" alt="">
+                                                    <div class="name-label">M24</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/sr_awm.png" alt="">   
+                                                    <div class="name-label">AWM</div> 
+                                                </div>                                     
+                                            </div>
+                                            <h3>SMG</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/smg_ump45.png" alt="">
+                                                    <div class="name-label">UMP45</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/smg_vector.png" alt="">
+                                                    <div class="name-label">VECTOR</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/smg_microuzi.png" alt="">   
+                                                    <div class="name-label">MICRO UZI</div> 
+                                                </div>                                     
+                                            </div>
+                                            <h3>Shotgun</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/shotgun_s1897.png" alt="">
+                                                    <div class="name-label">S1897</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/shotgun_dbs.png" alt="">
+                                                    <div class="name-label">DBS</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="p-image" src="/images/pubg/pubg_gunplay/shotgun_s12k.png" alt="">   
+                                                    <div class="name-label">S12K</div> 
+                                                </div>                                    
+                                            </div>
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://guide.pubg.com/en-gb/gameinfo/gunPlay" target="_blank">PUBG: Gunplay</a></em></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- MAPS -->
+                                        <div class="maps text">
+                                            <h1>Maps</h1>
+                                            <p>PUBG: Battlegrounds has a total of 8 maps. Each battleground tells a different story and has a different ambiance which leaves most players eager for more.</p>
+                                            <hr>
+                                            <h3>Erangel</h3>
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>Explore vast grasslands, towering mountains, and various cities and towns in this 8x8 km island Erangel.</p> 
+                                                    <p>Erangel is the place where the godfather of the Battlegrounds, Sergei Kalimnick, was born and left as the only survivor from a terrible massacre.</p>
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_erangel.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h3>Miramar</h3>
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>Miramar, a 8x8 km desert map, is a haven for snipers for its sheer landscape and barren wastes.</p>
+                                                    <p>The television producer Hector Ochoa hosted the death race "A La Muerte Vamos!" and won Miramar back from the Cartel. Years later, he turned this place into a Battleground.</p>
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_miramar.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h3>Sanhok</h3>
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>In this small 4x4 km map, players will face even more fast-paced battles as enemies will always be lurking nearby in Sanhok.</p>
+                                                    <p>The famous Sanhok Tapes that captured The Sanhok 4's grand escape was made here.</p>
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_sanhok.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h3>Vikendi</h3>
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>Built on the remains of Karl Lindh's Dinoland, Vikendi is now home to the most spine-chilling Battleground. Karl's sociopathic son Alex was responsible for the death of his father, sister, and Dinoland itself.</p>
+                                                    <p>The 6x6 km map Vikendi started out as a small friendly town but turned into a bloodcurdling Battleground.</p>
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_vikendi.png" alt="">
+                                                </div>
+                                            </div>        
+                                            <h3>Kirakin</h3>  
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>This desert island is known for its textiles, octopus farmers, and one of the most popular Battlegrounds' winners: Sadiya the Battlebride. Sadiya's victory reclaimed both Sadiya's homeland and her family's honor.</p>   
+                                                    <p>Do your best to survive in this small yet wild 2x2 km map Karakin.</p>   
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_karakin.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h3>Paramo</h3>
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>In this 3x3 km map, players will face an active volcano and its molten lava oozing all over the place. To make things even better, Paramo's topography consistently shifts every match.</p>
+                                                    <p>The Tythonic lab in Paramo is rumored to be conducting experiments on a strange flower from the stars.</p>
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_paramo.png" alt="">
+                                                </div>
+                                            </div>        
+                                            <h3>Haven</h3> 
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>Haven is an industrial island that acts as a hub for Tythonic's mysterious Bluechip operations. The threatening mercenary group Pillar overlooks Haven and protects all its secrets. In this tight 1x1 km map, players have to stalk through dark alleys and rooftops to bring down both the Pillar and enemy players.</p>   
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_haven.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h3>Taego</h3>
+                                            <div class="map-kinds">
+                                                <div class="map-text">
+                                                    <p>After infamous Hosan prisoner Kangjae Ma fought off an entire cell of convicts, the security footage of the riot went viral. This video that earned the name the “Gulag tapes” inspired Sergei to create the Battlegrounds.</p>
+                                                    <p>In this 8x8 km map, players can try out Taego's exclusive features such as the Self-AED, Comeback Arena, and so much more.</p> 
+                                                </div>
+                                                <div class="map-img">
+                                                    <img class="the-map" src="/images/pubg/pubg_maps/map_taego.png" alt="">
+                                                </div>
+                                            </div>        
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://guide.pubg.com/en-gb/gameinfo/maps" target="_blank">PUBG: Maps</a></em></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- RELEASE DATE -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="pubg-release"/>
+                            <label class="tabs-label" for="pubg-release">Release<br>Date</label>
+                            <div class="tabs-content">
+                                <h1>Release Date</h1>
+                                <p>Following a soft launch in Canada, an English version of Exhilarating Battlefield, localized simply as PUBG Mobile, was released worldwide on March 19, 2018. Its initial release date was March 23, 2017.</p>
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="Read more: https://guide.pubg.com/en-gb/gameinfo/maps" target="_blank">PUBG: Release Date</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- SYSTEM REQUIREMENTS -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="pubg-system"/>
+                            <label class="tabs-label" for="pubg-system">System<br>Requirements</label>
+                            <div class="tabs-content">
+                                <h1>System Requirements</h1>
+                                <div class="system-cards">
+                                    <h3>MINIMUM SPECS</h3>
+                                    <div class="specifications">
+                                        <div class="specs">
+                                            <h4>OPERATING SYSTEM</h4>
+                                            <p>Windows 7 or later 64-bit</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>CPU</h4>
+                                            <p>Intel Core i5-4430 (Intel)</p>
+                                            <p>AMD FX-6300 (AMD)</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>GPU</h4>
+                                            <p>NVIDIA GeForce GTX 960</p>
+                                            <p>AMD Radeon R7 370</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>RAM</h4>
+                                            <p>8GB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="system-cards">
+                                    <h3>RECOMMENDED SPECS</h3>
+                                    <div class="specifications">
+                                        <div class="specs">
+                                            <h4>OPERATING SYSTEM</h4>
+                                            <p>Windows 10 or later 64-bit</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>CPU</h4>
+                                            <p>Intel Core i5-7600K (Intel)</p>
+                                            <p>AMD Ryzen 5-1600 (AMD)</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>GPU</h4>
+                                            <p>Nvidia GTX 1060 6GB</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>RAM</h4>
+                                            <p>8GB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://www.pcgamer.com/pubg-system-requirements/" target="_blank">PUBG: System Requirements</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- BEGINNER'S GUIDE -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="pubg-beginner"/>
+                            <label class="tabs-label" for="pubg-beginner">Beginner's<br>Guide</label>
+                            <div class="tabs-content">
+                                <h1>Beginner's Guide</h1>
+                                <p>There are a lot of different ways to play PlayerUnknown's Battlegrounds, but players looking to win a match can use proven strategies in order to increase their chances. PUBG is a battle royale game where players are dropped into a match without gear. Players need to run around the map collecting any weapons, attachments, and gear they find along the way, but they'll also need to avoid or eliminate any nearby opponents.</p>
+                                <ul>
+                                    <li>For you to survive, you must get a weapon, an armor and a medicine kit.</li>
+                                    <li>Going to larger areas could be dangerous, staying in small towns is better to find better weapons and other stocks.</li>
+                                    <li>Getting a Level 3 Helmet could help lessen the possiblity of getting killed in the first shot.</li>
+                                    <li>One of the strategies of most players is to stay away from the combat for an easier road to success.</li>
+                                    <li>Spend more time looking for loot around the buildings.</li>
+                                    <li>Look for the best landing spot, collect fromo non populated areas and stay out of the action in order to get the top spot.</li>
+                                </ul>
+                                    <p><strong>Read more: </strong><em><a href=" https://screenrant.com/pubg-beginners-guide-how-start-win-strategies/" target="_blank">Valorant: Beginner's Guide</a></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
         <footer>
             <div id="grid">
                 <div class="col-1">
-                    <div class="logo"><a href="Homepage.html">DAYBREAK</a></div>
+                    <div class="logo"><a href="/pages/home_page.html">DAYBREAK</a></div>
                     <div class="f-subtitle">About</div>
                     <p>Our Website provide the most recent game-related news, as well as blog posts, changes, and other updates.</p>
                 </div>
                 <div class="col-2">
                     <div class="f-subtitle">Quick Links</div>
                     <ul>
-                        <li><a href="/Homepage/Homepage.html">Home</a></li>
-                        <li><a href="/TopGames/TopGames.html">Top Games 2022</li></a>
-                        <li><a href="/Creator's Pick/CreatorsPick.html">Creator's Picks</a></li>
-                        <li><a href="/AboutUs/AboutUs.html">About Us</li></a>
-                        <li><a href="/ContactUs/ContactUs.html">Contact Us</a></li>
+                        <li><a href="/pages/home_page.html">Home</a></li>
+                        <li><a href="/pages/top_games.html">Top Games 2022</a></li>
+                        <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
+                        <li><a href="/pages/about_us.html">About Us</a></li>
+                        <li><a href="/pages/contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -67,7 +447,5 @@
                 </ul>
             </div>
         </footer>
-
     </body>
-
 </html>
