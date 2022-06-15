@@ -1,0 +1,354 @@
+body {
+    position:relative;
+    z-index: 0;
+}
+
+#main {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-primary);
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.specs p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* HEADER */
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    height: 25vh;
+    width: 100%;
+    border-radius: 0 0 100px 0;
+    background: url('/images/top_games/codbg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.header-txt {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    border-radius: 0 0 100px 0;
+    background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
+}
+
+#game-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color-text);
+    padding: 2.3em 0 0 8.5em;
+}
+
+/* CONTENT */
+.game {
+    position: absolute;
+    z-index: 1;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+/* GAME PICTURE & BUTTON */
+.game-img {
+    position: relative;
+}
+
+.game-image {
+    border-radius: 0 0 0 100px;
+    border: 15px solid var(--color-text);
+    height: 500px;
+    width: 370px;
+    object-fit: cover;
+}
+
+.container-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rank {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+.ranking {
+    padding: 15px 35px 15px 25px;  
+    background: var(--color-secondary);
+    font-weight: 800;
+    color: var(--color-text);
+    font-size: 40px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.game-btns {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 20px 15px 35px;
+    border-radius: 100px 10px 10px 10px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* TABS */
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "spaces tabs";
+}
+
+.space {
+    width: 480px;
+    grid-area: spaces;
+}
+
+.tabs {
+    width: 90%;
+    grid-area: tabs;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--color-text);
+    box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.tabs-radio { display: none; }
+
+.tabs-label {
+    padding: 15px 50px;
+    margin: 10px 20px;
+    background: var(--color-text);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.5cm;
+    color: var(--color-primary);
+    border-radius: 10px;
+    transition: background 0.1s, color 0.1s;
+}
+
+.tabs-label:hover { background: #d8d8d8; }
+.tabs-label:active { background: var(--color-secondary); }
+
+.tabs-content {
+    display: none;
+    padding: 30px 40px;
+    border-radius: 0 0 20px 20px;
+    border-top: 50px solid #1B1919;
+    width: 100%;
+}
+
+.tabs-radio:checked + .tabs-label {
+    background: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 10px;
+}
+
+.tabs-radio:checked + .tabs-label + .tabs-content { display: block ; }
+
+@media (min-width: 600px) {
+    .tabs-label { width: auto; }
+    .tabs-content { order: 1; }
+}
+
+/* CONTENT INSIDE TABS */
+hr {
+    margin: 30px 0;
+}
+
+.source {
+    margin-top: 35px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.img-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-image {
+    position: relative;
+}
+
+.v-image {
+    width: 275px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.name-label {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.filler {
+    width: 275px;
+    height: 150px;
+}
+
+.system-cards {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    padding: 0 20px 20px 20px;
+  
+}
+
+.specifications {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.system-cards h3, h4 {
+    padding-top: 20px;
+}
+
+.b-guide {
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+/* INSIDE TABS */
+#gameinfo-content {
+    padding: 0;
+}
+
+.vertical-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.tabs-list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 30px;
+    position: relative;
+    background-color: #292727;
+    border-radius: 0 0 0 10px;
+}
+  
+.tabs-list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 30px;
+    transition: all 0.5s ease;
+    color: #fff;
+    z-index: 12;
+}
+  
+#Characters:checked ~ .tabs-list label.Characters,
+#Weapons:checked ~ .tabs-list label.Weapons,
+#Vehicles:checked ~ .tabs-list label.Vehicles,
+#modes:checked ~ .tabs-list label.modes {
+    color: #292727;
+}
+
+.tabs-list label:hover{
+    color: #FFE500;
+}
+
+.slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #FFE500;
+    transition: all 0.4s ease;
+}
+
+#Characters:checked ~ .tabs-list .slider { top: 30px; }
+#Weapons:checked ~ .tabs-list .slider { top: 90px; }
+#Vehicles:checked ~ .tabs-list .slider { top: 150px; }
+#modes:checked ~ .tabs-list .slider { top: 210px; }
+
+.text-content {
+    width: 70%;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+.text {
+    display: none;
+}
+
+.text-content .Characters {
+    display: block;
+    text-align: justify;
+}
+.text-content .Characters li {
+    display: block;
+    text-align: justify;
+}
+
+#Characters:checked ~ .text-content .Characters,
+#Weapons:checked ~ .text-content .Weapons,
+#Vehicles:checked ~ .text-content .Vehicles,
+#modes:checked ~ .text-content .modes {
+    display: block;
+}
+
+#Weapons:checked ~ .text-content .Characters,
+#Vehicles:checked ~ .text-content .Characters,
+#modes:checked ~ .text-content .Characters {
+    display: none;
+}
+
+.vtabs {
+    display: none;
+}
+
+/*List */
+.tabs-content ul li::before {
+    content: "\2022";  
+    color: var(--color-primary);
+    display: inline-block;
+    width: 1em; 
+    margin-top: 5px ; 
+    margin-left: 5px   
+}

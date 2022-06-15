@@ -12,39 +12,402 @@
         <link rel="stylesheet" href="/css/main/footer.css">
     </head>
     <body>
-        <nav class="navbar">
-            <div class="logo">DAYBREAK</div>
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <div class="menu">
-                    <li><a href="/pages/home_page.html">Home</a></li>
-                    <li class="active"><a href="/pages/top_games.html">Top Games</a></li>
-                    <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
-                    <li><a href="/pages/about_us.html">About Us</a></li>
-                    <li><a href="/pages/contact_us.html">Contact Us</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div id="main">
+            <nav class="navbar">
+                <div class="logo">DAYBREAK</div>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="/pages/home_page.html">Home</a></li>
+                        <li class="active"><a href="/pages/top_games.html">Top Games</a></li>
+                        <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
+                        <li><a href="/pages/about_us.html">About Us</a></li>
+                        <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <main>
+                <div class="wrapper">
+                    <header>
+                        <div class="header-txt">
+                            <div id="game-title">Call Of Duty: Warzone</div>
+                        </div>
+                        <div class="game">
+                            <div class="game-img">
+                                <img class="game-image" src="/images/top_games/tp_cod.jpg" alt="Call Of Duty: Wazone thumbnail">
+                                <div class="container-absolute">
+                                    <div class="rank">
+                                        <div class="ranking">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://www.callofduty.com/warzone/download" target="_blank"><button class="game-btns" id="download">Download Call Of Duty</button></a>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <div class="space"></div>
+                        <div class="tabs">
+                            <!-- OVERVIEW -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="cod-overview" checked/>
+                            <label class="tabs-label" style="line-height: 35px;" for="cod-overview">Overview</label>
+                            <div class="tabs-content">
+                                <h1>What is Call of Duty: War Zone?</h1>
+                                <p>Call of Duty: Warzone is a free-to-play battle royale video game released on March 10, 2020, for PlayStation 4, Xbox One, and Microsoft Windows. A version for the PlayStation 5 and Xbox Series X/S has been announced to be released in 2022, with a mobile version also in development as of 2022.</p>
+                                <hr>
+                                <p>Call of Duty: Modern Warfare has been out for quite some time now. Since the release of the game back in October 2019, fans have speculated about the release of a new Battle Royale mode. Coming off the immense success of Black Ops 4’s Blackout, which is still heavily played to this day, Activision Blizzard did what many people thought they would never do: they’ve made Call of Duty free to play with the release of the new Warzone Battle Royale game mode.</p>
+                                <p>Warzone is the successor to Blackout and it has the potential to be one of the best battle royales on the market right now. Fans all over the world are excited to jump into the battlefield. Let’s go over everything you need to know about Call of Duty: Warzone!</p>
+                                
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://blog.gfuel.com/call-of-duty-warzone" target="_blank">What is Call Of Duty:Warzone?</a></em></p>
+                                </div>
+                            </div>
 
-        <main>
-        </main>
+                            <!-- GAME INFORMATION -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="cod-gameinfo"/>
+                            <label class="tabs-label" for="cod-gameinfo">Game<br>Information</label>
+                            <div class="tabs-content" id="gameinfo-content">
+                                <div class="vertical-tabs">
+                                    <input class="vtabs" type="radio" name="slider" checked id="Characters">
+                                    <input class="vtabs" type="radio" name="slider" id="Weapons">
+                                    <input class="vtabs" type="radio" name="slider" id="Vehicles">
+                                    <input class="vtabs" type="radio" name="slider" id="modes">
+                                    <div class="tabs-list">
+                                        <label for="Characters" class="Characters">Characters</label>
+                                        <label for="Weapons" class="Weapons">Weapons</label>
+                                        <label for="Vehicles" class="Vehicles">Vehicles</label>
+                                        <label for="modes" class="modes">Game Modes</label>
+                                        <div class="slider"></div>
+                                    </div>
+                                    <div class="text-content">
+                                        <!-- Characters -->
+                                        <div class="Characters text">
+                                            <h1>Characters</h1>
+                                            <p>Warzone allows online multiplayer combat among 150 players, although some limited-time game modes support 200 players. Other modes include Plunder, Rebirth: Resurgence, Buy Back, Payload and Clash. The game features both cross-platform play and cross-platform progression between three games.</p>
+                                            <hr>
+                                            <ul>
+                                            <h3>SAS Operators</h3>
+                                            <li><b>Ghost</b>: While the Ghost character may be wrapped up in controversy due to actor Jeff Leach, his design has made him a favorite with fans. Boasting a skull mask and cloak, he stands out for his hidden pastspand is one of Price’s most trusted allies.</li>
+                                            <li><b>Thorne</b>: A straightforward Soldier, Thorne wears a similar hat to Captain Price and served under the man himself for three years. He also wears the Union Jack flag on his vest.</li>
+                                            <li><b>Charly</b>: Charly also rocks the classic, SAS-style hat alongside a long-sleeved undershirt. She grew up hunting poachers in Africa, eventually joining the British Army and befriending Kate Laswell.</li>
+                                            <h3>Warcom Operators</h3>
+                                            <li><b>Talon</b>: This Canadian operator is known for their unique, bird-based finishing move. Boasting some Native American roots alongside black face paint on the upper part of his face, Talon is one of the more unique Operators.</li>
+                                            <li><b>Domino</b>: This French Operator started as an Olympic sprinter before joining the military, and she is described as highly competitive because of this. She rocks a modern military getup.</li>
+                                            <li><b>Golem</b>: Another ghillie suit wearer, Golem is an expert bow hunter and tracker who comes from a family with a history of soldiers. He is also good at cooking and storytelling.</li> 
+                                            <h3>Demon Dogs Operators</h3>
+                                            <li><b>D-Day</b>: Wearing a bandana along with some shades and a large beard, D-Day is an Army Ranger from Texas.</li>
+                                            <li><b>Sparks</b>: An experience sergeant, Sparks has also worked with Shadow Company. His outfit sees him in a snowy white ghillie suit, though his face is exposed.</li>
+                                            <li><b>Alice</b>: Following her family as a refugee, Alice served in Afghanistan and excelled as a soldier. She also recruited D-Day. She wears a vest and cap, and her arms are exposed.</li> 
+                                            <h3>Spetsnaz Operators</h3>
+                                            <li><b>Minotaur</b>: The biggest Operator in the game, this massive blonde Russian is terrifying in-game. Having been placed on psychiatric leave for years, he has since returned to service.</lip>
+                                            <li><b>Bale</b>: The commanding officer of Minotaur, Bale is a “legend among the Spetsnaz.” He learned to walk again after being injured in combat.</li>
+                                            <li><b>Rodion</b>: Rocking no gear apart from a helmet, Rodion’s unique look likely coincides with his cockiness due to young age. He also grew up watching old action movies.</li>
+                                            <h3>Jackals Operators</h3>
+                                            <li><b>Mace</b>: A masked Operator like Ghost, Mace’s arms are marked with traditional scars to honor his South African heritage.</li>
+                                            <li><b>Azur</b>: An Al Qatala arms dealer, Azur is ambitious. He wears a head wrap and scarf with a large beard.</li>
+                                            <li><b>Grinch</b>: Having an unknown origin, Grinch wears a hood along with a mask. Only his lips, nose, and eyes are visible, and he killed 3 Jackals before being recruited himself.</li>
+                                            </ul>
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://blog.gfuel.com/call-of-duty-warzone" target="_blank">Call Of Duty:Warzone: Characters</a></em></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Weapons -->
+                                        <div class="Weapons text">
+                                            <h1>Weapon</h1>
+                                            <p>There are 30 new primary weapons and 12 new secondary weapons in Call of Duty: Warzone Pacific with the integration of Vanguard. This weapons guide will give you all you need to know about each weapon and what its focus is</p>
+                                            <hr>
+                                            <h3>Assault Rifles</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/assault_m13.png" alt="">
+                                                    <div class="name-label">M13</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/assault_m4a1.png" alt="">
+                                                    <div class="name-label">M4A1</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/assault_fr5.56.png" alt="">
+                                                    <div class="name-label">FR 5.56</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/assault_ak47.png" alt="">
+                                                    <div class="name-label">AK-47</div>
+                                                </div>                                              
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/assault_fal.png" alt="">
+                                                    <div class="name-label">FAL</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/assault_fnscar17.png" alt="">
+                                                    <div class="name-label">FN SCAR 17</div>
+                                                </div>                                              
+                                            </div>
+                                            <h3>Submachine Guns</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/submachine_mp5.png" alt="">
+                                                    <div class="name-label">MP5</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/submachine_mp7.png" alt="">
+                                                    <div class="name-label">MP7</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/submachine_aug.png" alt="">
+                                                    <div class="name-label">AUG</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/submachine_p90.png" alt="">
+                                                    <div class="name-label">P90</div>
+                                                </div>                                              
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/submachine_pp19bizon.png" alt="">
+                                                    <div class="name-label">PP19 BIZON</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/submachine_uzi.png" alt="">
+                                                    <div class="name-label">UZI</div>
+                                                </div>                                        
+                                            </div>
+                                            <h3>Shotguns</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/shotguns_model680.png" alt="">
+                                                    <div class="name-label">MODEL 680</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/shotguns_r90.png" alt="">
+                                                    <div class="name-label">R9-0</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/shotguns_725.png" alt="">
+                                                    <div class="name-label">725</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/shotguns_origin12.png" alt="">
+                                                    <div class="name-label">ORIGIN 12 SHOTGUN</div>
+                                                </div>                                              
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/shotguns_vlkrogue.png" alt="">
+                                                    <div class="name-label">VLK ROGUE</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/shotguns_jak12.png" alt="">
+                                                    <div class="name-label">JAK-12</div>
+                                                </div>
+                                            </div>
+                                            <h3>LMGs</h3>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/lmg_m91.png" alt="">
+                                                    <div class="name-label">M91</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/lmg_pkm.png" alt="">
+                                                    <div class="name-label">PKM</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/lmg_mg34.png" alt="">
+                                                    <div class="name-label">MG34</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/lmg_sa87.png" alt="">
+                                                    <div class="name-label">SA87</div>
+                                                </div>                                              
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/lmg_holger26.png" alt="">
+                                                    <div class="name-label">HOLGER</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_weapons/lmg_mk9bruen.png" alt="">
+                                                    <div class="name-label">MK9</div>
+                                                </div>                                          
+                                            </div>
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://gamewith.net/cod-modernwarfare/article/show/11872" target="_blank">Call Of Duty:Warzone: Weapons</a></em></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Vehicles -->
+                                        <div class="Vehicles text">
+                                            <h1>Vehicles</h1>
+                                            <p>Vehicles in Call of Duty: Warzone are fun, but incredibly dangerous. Throughout Verdansk there are a number of vehicles you can take your squad around in. Here’s a breakdown from safest to death-box o’clock:</p>
+                                            <p>Keep in mind that occupied vehicles show up on the map, so be aware that you are drawing attention to yourself if you're in one!</p>
+                                            <p>Vehicles can also explode in a very deadly way with enough damage (each has different amounts of HP based on size), so keep an eye on the vehicle health meter, and consider bailing if it is flashing red.</p> 
+                                            <hr>
+                                            <div class="img-layout">
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_vehicles/vehicles_atv.jpg" alt="Call of Duty: ATV">  
+                                                    <div class="name-label">ATV</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_vehicles/vehicles_tacticalrover.jpg" alt="Call of Duty: TACTICAL ROVER">  
+                                                    <div class="name-label">TACTICAL ROVER</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_vehicles/vehicles_suv.jpg" alt="Call of Duty: SUV">  
+                                                    <div class="name-label">SUV</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_vehicles/vehicles_cargotruck.jpg" alt="Call of Duty: CARGO TRUCK">  
+                                                    <div class="name-label">CARGO TRUCK</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <img class="v-image" src="/images/cod/cod_vehicles/vehicles_helicopter.jpg" alt="Call of Duty: HELICOPTER">  
+                                                    <div class="name-label">HELICOPTER</div>
+                                                </div>
+                                                <div class="content-image">
+                                                    <div class="filler"></div>
+                                                </div>                                              
+                                            </div>
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://gamewith.net/cod-modernwarfare/article/show/13569" target="_blank">Call Of Duty:Warzone: Vehicles</a></em></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- GAME MODES -->
+                                        <div class="modes text">
+                                            <h1>Game Modes</h1>
+                                            <p>Warzone features two primary game modes: Battle Royale and Plunder,. It supports up to 150 players in a single match, which exceeds the typical size of 100 players seen in other battle royale titles. Some limited-time modes support 200 players.</p>
+                                            <hr>
+                                            <h3>Battle Royale</h3>
+                                            <p>Which has support for up to 150 players</p>
+                                            <h3>Plunder</h3>
+                                            <p>In which players try to collect $1 million in cash before the other squads. CharlieIntel noted this about the new game mode, as they were given access to Warzone ahead of the release:</p>
+                                            <p>Plunder has a 30-minute timer for players to reach $1 million in cash. When a team reaches $1 million in cash secured, an overtime phase is triggered in the mode. The team that deposited the $1 million in cash has their $1 million secured. During this overtime phase, the amount of cash you find is doubled. The team with the most cash when the time ends wins the match.</p>
+                                            <p>If no one reaches $1 million in cash by the 30-minute mark, the team with the most money wins.</p>
+                                            <h3>Solos</h3>
+                                            <p>The newest mode added in Warzone. Here are the basics from the Activision Blog:</p>
+                                            <p>In Solos, you drop into Verdansk alone with Battle Royale rules. That means no squadmates, no friends – only you and a pistol with a few bullets. Think of this as Free-For-All in a traditional Call of Duty game, but on a massive scale.</p>
+                                            <p>As you loot, complete Contracts, and survive against up to 149 other players, the circle collapse will roll in just as it does in a normal Battle Royale. The Gulag will still welcome in prisoners of the Warzone, but if you die in that 1v1 Gunfight, forget any form of redeployment – you’re out for good.</p>
+                                            <p>The last Operator standing wins.</p>
+                                            <div class="source">
+                                                <p><strong>Read more: </strong><em><a href="https://blog.gfuel.com/call-of-duty-warzone" target="_blank">Call Of Duty:Warzone: Game Modes</a></em></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- RELEASE DATE -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="cod-release"/>
+                            <label class="tabs-label" for="cod-release">Release<br>Date</label>
+                            <div class="tabs-content">
+                                <h1>Release Date</h1>
+                                <p>Call of Duty: Warzone is a free-to-play battle royale video game released on March 10, 2020, for PlayStation 4, Xbox One, and Microsoft Windows.</p>
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://bartoll.se/2022/02/call-of-duty-warzone-modelled-russian-invasion/" target="_blank">Call Of Duty:Warzone: Release Date</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- SYSTEM REQUIREMENTS -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="cod-system"/>
+                            <label class="tabs-label" for="cod-system">System<br>Requirements</label>
+                            <div class="tabs-content">
+                                <h1>MINIMUM SPECS</h1>
+                                <div class="system-cards">
+                                    <div class="specifications">
+                                    <div class="specs">
+                                        <h4>OPERATING SYSTEM</h4>
+                                        <p>Windows 10 or later 64-bit</p>
+                                        </div>
+                                        <div class="specs">
+                                        <h4>CPU</h4>
+                                        <p>Intel Core i3-4340 (Intel)<br>AMD FX-6300 (AMD)</p>
+                                        </div>
+                                        <div class="specs">
+                                        <h4>GPU</h4>
+                                        <p>NVIDIA GeForce GTX 670 <br> Radeon HD 7950</p>
+                                        </div>
+                                        <div class="specs">
+                                        <h4>HDD</h4>
+                                        <p>175GB HD space</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>RAM</h4>
+                                            <p>8GB</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <h1 style="margin-top: 20px;">RECOMMENDED SPECS</h1>
+                                <div class="system-cards">
+                                    <div class="specifications">
+                                    <div class="specs">
+                                        <h4>OPERATING SYSTEM</h4>
+                                        <p>Windows 10 or later 64-bit</p>
+                                        </div>
+                                        <div class="specs">
+                                        <h4>CPU</h4>
+                                        <p>Intel Core i3-4340 (Intel)<br>AMD FX-6300 (AMD)</p>
+                                        </div>
+                                        <div class="specs">
+                                        <h4>GPU</h4>
+                                        <p>NVIDIA GeForce GTX 670 <br> Radeon HD 7950</p>
+                                        </div>
+                                        <div class="specs">
+                                        <h4>HDD</h4>
+                                        <p>175GB HD space</p>
+                                        </div>
+                                        <div class="specs">
+                                            <h4>RAM</h4>
+                                            <p>8GB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="source">
+                                    <p><strong>Read more: </strong><em><a href="https://blog.gfuel.com/call-of-duty-warzone" target="_blank">Call of Duty:Warzone: System Requirements</a></em></p>
+                                </div>
+                            </div>
+
+                            <!-- BEGINNER'S GUIDE -->
+                            <input class="tabs-radio" name="game-tabs" type="radio" id="cod-beginner"/>
+                            <label class="tabs-label" for="cod-beginner">Beginner's<br>Guide</label>
+                            <div class="tabs-content">
+                                <h1>Beginner's Guide</h1>
+                                <p>We have listed the main facts that players should know to reduce frustration when they enter a game. Some things are similar to other battle royales, while others will throw players for a loop. Keep reading to learn everything you need to know about how Call of Duty: Warzone works!</p>
+                                <hr>
+                                <ul>
+                                    <li>In the start of the game make sure to pick up atleast 1 weapon to defend yourself</li>
+                                    <li>Stay inside the safezone/white ring.</li>
+                                    <li>Make the most of armour plates.</li>
+                                    <li>Pay attention to the map or compass.</li>
+                                    <li>Listen to the footsteps.</li>
+                                    <li>If you are playing a squad you can pick a attachment for your teammate.</li>
+                                    <li>Use meta weapons to have a advantage.</li>
+                                    <li>Cut your parachute to reach further away and land faster./li>
+                                    <li>Have a strategy.</li>
+                                    <li>Take the highground to have advantage.</li>
+                                    
+                                </ul>
+                                    <div class="source">
+                                
+                                    <p><strong>Read more: </strong><em><a href="hhttps://www.thegamer.com/call-of-duty-how-warzone-works/" target="_blank">Call of Duty:Warzone: Beginner's Guide</a></em></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
         <footer>
             <div id="grid">
                 <div class="col-1">
-                    <div class="logo"><a href="Homepage.html">DAYBREAK</a></div>
+                    <div class="logo"><a href="/pages/home_page.html">DAYBREAK</a></div>
                     <div class="f-subtitle">About</div>
                     <p>Our Website provide the most recent game-related news, as well as blog posts, changes, and other updates.</p>
                 </div>
                 <div class="col-2">
                     <div class="f-subtitle">Quick Links</div>
                     <ul>
-                        <li><a href="/Homepage/Homepage.html">Home</a></li>
-                        <li><a href="/TopGames/TopGames.html">Top Games 2022</li></a>
-                        <li><a href="/Creator's Pick/CreatorsPick.html">Creator's Picks</a></li>
-                        <li><a href="/AboutUs/AboutUs.html">About Us</li></a>
-                        <li><a href="/ContactUs/ContactUs.html">Contact Us</a></li>
+                        <li><a href="/pages/home_page.html">Home</a></li>
+                        <li><a href="/pages/top_games.html">Top Games 2022</a></li>
+                        <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
+                        <li><a href="/pages/about_us.html">About Us</a></li>
+                        <li><a href="/pages/contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -67,7 +430,5 @@
                 </ul>
             </div>
         </footer>
-
     </body>
-
 </html>
