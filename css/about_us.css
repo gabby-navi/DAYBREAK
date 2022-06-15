@@ -1,0 +1,217 @@
+/* HEADER */
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background: url('/images/about_us/header_img.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.header-txt {
+    text-align: center;
+    color: var(--color-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    padding: 10em 20px;
+    background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
+}
+
+.aboutus-title {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 150px;
+    font-weight: normal;
+    line-height: 130%;
+}
+
+/* h1 { font-size: 80px; } */
+
+/* CONTENT */
+.overlaps {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "top5" "top5" "top5" "top5" "top5" 
+                        "tips" "tips" "tips" "tips" "tips";
+}
+
+.content {
+    background-color: var(--color-primary);
+    padding: 100px 150px;
+    border-radius: 0 0 100px 0;
+    grid-area: top5;
+    z-index: 2;
+}
+
+.overlap {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "about" "about" "about" "about" "about" 
+                        "contact" "contact" "contact" "contact" "contact";
+}
+
+.mid-content {
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 100px 150px;
+    border-radius: 100px 0 100px 0;
+    margin-top: -100px;
+    grid-area: about;
+    z-index: 1;
+}
+
+/* WHO WE ARE */
+.whoweare {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.daybreak {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 100;
+    font-size: 80px;
+    width: 30%;
+    line-height: 160%;
+    color: #2E2A2A;
+    border: 10px solid #2E2A2A;
+    border-radius: 20px;
+    padding: 50px 150px 50px 40px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.au-text {
+    width: 60%;
+    padding-left: 20%;
+    color: var(--color-text);
+}
+
+h2 { font-size: 50px; }
+
+/* HOW WE STARTED */
+.hws {
+    /* text-align: center; */
+    width: auto;
+    height: 45vw;
+    border: 1px solid black;
+    background-image: url("/images/about_us/how_we_started_bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    grid-area: tips;
+    grid-row-start: 5;
+    position: relative;
+}
+
+.hws-gradient {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 45vw;
+    background-image: linear-gradient(to right, rgba(33, 30, 30, 1) 15%, rgba(33, 30, 30, 0) 100%);
+    padding: 100px 150px;
+}
+
+.hws-text {
+    color: var(--color-text);
+    padding: 250px 100px 20px 0;
+    width: 60%;
+}
+
+.achieve-text {
+    text-align: center;
+    color: var(--color-text);
+    padding-bottom: 20px;
+}
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    flex: 1;
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 0 20px 10px 20px;
+    text-align: center;
+}
+
+/* CONTACT US */
+.contactus {
+    width: auto;
+    height: 40vw;
+    border: 1px solid black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/about_us/au-minecraft.png");
+    grid-area: contact;
+    grid-row-start: 5;
+    position: relative;
+}
+
+.contact-gradient {
+    color: var(--color-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40vw;
+    background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
+    padding: 180px 150px;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.the-team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member { 
+    flex: 1;
+    margin-top: 20px;
+}
+.member p { font-size: 25px; }
+
+.profiles {
+    height: 25vh;
+    margin: 15px;
+    border-radius: 50%;
+}

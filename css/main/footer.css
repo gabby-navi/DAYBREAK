@@ -4,7 +4,11 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-primary);
+    background-color: #151515;
+}
+
+footer p {
+    margin-top: auto;
 }
 
 #grid {

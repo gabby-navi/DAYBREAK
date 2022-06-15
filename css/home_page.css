@@ -21,7 +21,7 @@ header {
     top: 0;
     width: 100%;
     height: 80vh;
-    padding: 8em 20px;
+    padding: 10em 20px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
