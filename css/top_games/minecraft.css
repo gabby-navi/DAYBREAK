@@ -115,6 +115,10 @@ header {
     cursor: pointer;
 }
 
+.game-btns:hover {
+    background-color: #ddc700;
+}
+
 /* TABS */
 .content {
     display: grid;
