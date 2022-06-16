@@ -21,7 +21,7 @@ header {
     top: 0;
     width: 100%;
     height: 80vh;
-    padding: 10em 20px;
+    padding: 10% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
@@ -31,8 +31,6 @@ header {
     font-weight: normal;
     line-height: 130%;
 }
-
-/* h1 { font-size: 80px; } */
 
 /* CONTENT */
 .overlaps {
@@ -98,9 +96,54 @@ header {
 
 h2 { font-size: 50px; }
 
+@media (max-width: 1430px) {
+    .content {
+        padding: 100px 110px;
+    }
+
+    .daybreak {
+        padding-right: 450px;
+    }
+
+    .au-text {
+        width: 50%;
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 1239px) {
+    .content {
+        padding: 100px;
+    }
+
+    .daybreak {
+        padding-right: 450px;
+    }
+
+    .au-text {
+        width: 50%;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1115px) {
+    .daybreak {
+        font-size: 60px;
+        padding-right: 350px;
+    }
+
+    .au-text {
+        width: 55%;
+        padding-left: 10%;
+    }
+
+    h2 { 
+        font-size: 40px; 
+    }
+}
+
 /* HOW WE STARTED */
 .hws {
-    /* text-align: center; */
     width: auto;
     height: 45vw;
     border: 1px solid black;
@@ -133,6 +176,34 @@ h2 { font-size: 50px; }
     width: 60%;
 }
 
+@media (max-width: 1430px) {
+    .hws, .hws-gradient {
+        height: 60vw;
+    }
+
+    .hws-text {
+        padding: 200px 100px 20px 0;
+    }
+}
+
+@media (max-width: 1239px) {
+    .hws, .hws-gradient {
+        height: 70vw;
+    }
+}
+
+@media (max-width: 1115px) {
+    .hws-gradient {
+        padding: 100px;
+    }
+
+    .hws-text {
+        padding: 13% 0;
+        width: 70%;
+    }
+}
+
+/* WHAT WE AIM TO ACHIEVE */
 .achieve-text {
     text-align: center;
     color: var(--color-text);
@@ -170,8 +241,14 @@ h2 { font-size: 50px; }
     text-align: center;
 }
 
-/* CONTACT US */
-.contactus {
+@media (max-width:1239px) {
+    .mission-vision {
+        padding: 0;
+    }
+}
+
+/* MEET THE TEAM */
+.meet {
     width: auto;
     height: 40vw;
     border: 1px solid black;
@@ -184,7 +261,7 @@ h2 { font-size: 50px; }
     position: relative;
 }
 
-.contact-gradient {
+.meet-gradient {
     color: var(--color-text);
     position: absolute;
     left: 0;
@@ -192,10 +269,10 @@ h2 { font-size: 50px; }
     width: 100%;
     height: 40vw;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
-    padding: 180px 150px;
+    padding: 10% 150px;
 }
 
-.contact-text {
+.meet-text {
     text-align: center;
 }
 
@@ -214,4 +291,21 @@ h2 { font-size: 50px; }
     height: 25vh;
     margin: 15px;
     border-radius: 50%;
+}
+
+@media (max-width:1239px) {
+    .profiles {
+        height: 20vh;
+    }
+
+    .member p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .meet, .meet-gradient {
+        height: 50vw;
+        padding-top: 15%;
+    }
 }

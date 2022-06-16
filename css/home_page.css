@@ -21,11 +21,29 @@ header {
     top: 0;
     width: 100%;
     height: 80vh;
-    padding: 10em 20px;
+    padding: 13% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
 h1 { font-size: 90px; }
+
+@media (max-width:1430px) {
+    .header-txt {
+        padding-top: 10%;
+    }
+}
+
+@media (max-width:1239px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width:1115px) {
+    h1 {
+        font-size: 70px;
+    }
+}
 
 /* CONTENT */
 .overlaps {
@@ -42,6 +60,12 @@ h1 { font-size: 90px; }
     border-radius: 0 0 100px 0;
     grid-area: top5;
     z-index: 2;
+}
+
+@media (max-width:1430px) {
+    .content, .mid-content {
+        padding: 100px;
+    }
 }
 
 /* TOP 5 POPULAR GAMES */
@@ -73,7 +97,7 @@ h1 { font-size: 90px; }
 
 .top5-text {
     width: 50%;
-    padding-left: 10%;
+    margin-left: 5%;
     color: var(--color-text);
     text-align: right;
 }
@@ -81,6 +105,12 @@ h1 { font-size: 90px; }
 h2 {
     font-size: 50px;
     line-height: 60px;
+}
+
+@media (max-width:1239px) {
+    h2 {
+        font-size: 40px;
+    }
 }
 
 /* BUTTONS */
@@ -141,12 +171,12 @@ h2 {
     width: auto;
     height: 55vw;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
-    padding: 100px 150px;
+    padding: 5% 150px;
 }
 
 .tips-text {
     color: var(--color-text);
-    padding: 230px 100px 20px 100px;
+    padding-top: 15%;
 }
 
 .tips {
@@ -182,6 +212,37 @@ h2 {
     text-align: end;
 }
 
+@media (max-width:1430px) {
+    .cp-tips, .tips-gradient {
+        height: 75vw;
+    }
+
+    .tips-gradient {
+        padding: 100px;
+    }
+}
+
+@media (max-width:1239px) {
+    .tips-gradient {
+        padding: 3% 70px;
+    }
+}
+
+@media (max-width:1115px) {
+    .cp-tips, .tips-gradient {
+        height: 130vw;
+    }
+    
+    .card {
+        flex: 100%;
+        margin: 20px 20%;
+    }
+
+    .tips-gradient {
+        padding-top: 5%;
+    }
+}
+
 /* ABOUT US */
 .overlap {
     display: grid;
@@ -209,7 +270,7 @@ h2 {
 
 .aboutus-text {
     width: 50%;
-    padding-right: 10%;
+    margin-right: 5%;
     color: var(--color-text);
 }
 
@@ -259,7 +320,7 @@ h2 {
     width: auto;
     height: 50vw;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
-    padding: 300px 150px;
+    padding: 15% 150px;
 }
 
 .contact-text {
@@ -281,4 +342,25 @@ h2 {
 .contactus-text {
     width: 50%;
     color: var(--color-text);
+}
+
+@media (max-width:1430px) {
+    .contactus, .contact-gradient {
+        height: 55vw;
+    }
+
+    .contact-gradient {
+        padding: 15% 20px;
+    }
+
+    .img5 {
+        width: 30%;
+    }
+}
+
+@media (max-width:1239px) {
+    .img5 {
+        height: 400px;
+        margin-right: 8%;
+    }
 }
