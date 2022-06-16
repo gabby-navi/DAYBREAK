@@ -33,6 +33,13 @@ header {
 
 h1 { font-size: 100px; font-weight: 900px; }
 
+@media (max-width: 1430px) {
+    .h1 {
+        font-size: 100px; 
+        font-weight: 900px;
+    }
+}
+
 /* CONTENT */
 .content {
     background-color: var(--color-primary);
