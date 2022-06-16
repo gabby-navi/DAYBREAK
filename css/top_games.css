@@ -34,7 +34,7 @@ h1 {
     font-size: 90px;
 }
 
-@media (max-width:1430px) {
+@media (max-width:1880px) {
     .header-txt {
         padding: 6% 20px;
     }
@@ -44,9 +44,25 @@ h1 {
     }
 }
 
+@media (max-width:1430px) {
+    .header-txt {
+        padding: 7% 20px;
+    }
+}
+
 @media (max-width:1239px) {
     h1 {
         font-size: 60px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-txt {
+        padding-top: 13%;
+    }
+
+    h1 {
+        font-size: 50px;
     }
 }
 
@@ -165,6 +181,17 @@ h1 {
     position: relative;
 }
 
+@media (max-width: 1880px) {
+    .valorant,
+    .minecraft,
+    .pubg,
+    .callofduty, 
+    .csgo,
+    .game-gradient {
+        height: 120vh;
+    }
+}
+
 @media (max-width:1430px) {
     .valorant,
     .minecraft,
@@ -204,6 +231,19 @@ h1 {
 
     .game-text {
         margin-left: 4%;
+    }
+}
+
+@media (max-width:1024px) {
+    .valorant,
+    .minecraft,
+    .pubg,
+    .game-gradient {
+        height: 80vh;
+    }
+
+    .callofduty, .csgo, #longer-gradient {
+        height: 90vh;
     }
 }
 

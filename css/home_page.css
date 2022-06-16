@@ -27,6 +27,12 @@ header {
 
 h1 { font-size: 90px; }
 
+@media (max-width:1880px) {
+    .header-txt {
+        padding-top: 8%;
+    }
+}
+
 @media (max-width:1430px) {
     .header-txt {
         padding-top: 10%;
@@ -42,6 +48,16 @@ h1 { font-size: 90px; }
 @media (max-width:1115px) {
     h1 {
         font-size: 70px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-txt {
+        padding-top: 13%;
+    }
+
+    h1 {
+        font-size: 60px;
     }
 }
 
@@ -243,6 +259,12 @@ h2 {
     }
 }
 
+@media (max-width:1024px) {
+    .cp-tips, .tips-gradient {
+        height: 140vw;
+    }
+}
+
 /* ABOUT US */
 .overlap {
     display: grid;
@@ -298,6 +320,12 @@ h2 {
     margin-bottom: 50px;
 }
 
+@media (max-width:1024px) {
+    .mid-content {
+        padding: 80px;
+    }
+}
+
 /* CONTACT US */
 .contactus {
     width: auto;
@@ -317,7 +345,7 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    width: auto;
+    width: 100%;
     height: 50vw;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
     padding: 15% 150px;
@@ -364,3 +392,11 @@ h2 {
         margin-right: 8%;
     }
 }
+
+@media (max-width:1024px) {
+    .contactus, .contact-gradient {
+        height: 60vw;
+    }
+}
+
+

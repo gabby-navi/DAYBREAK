@@ -55,11 +55,13 @@ header {
     padding: 7% 0 0 8.5em;
 }
 
-@media (max-width:1430px) {
+@media (max-width:1880px) {
     header, .header-txt {
         height: 35vh;
     }
+}
 
+@media (max-width:1430px) {
     #game-title {
         padding-left: 6.8em;
     }
@@ -74,6 +76,16 @@ header {
 @media (max-width:1115px) {
     #game-title {
         padding: 9% 0 0 6em;
+    }
+}
+
+@media (max-width:1024px) {
+    header, .header-txt {
+        height: 30vh;
+    }
+
+    #game-title {
+        padding-left: 4.8em;
     }
 }
 
@@ -162,6 +174,26 @@ header {
 @media (max-width:1115px) {
     .game {
         padding-left: 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .game-image {
+        height: 360px;
+        width: 230px;
+    }
+
+    .rank {
+        margin: 5px;
+    }
+    
+    .ranking {
+        font-size: 30px;
+        padding: 10px 25px 10px 20px; 
+    }
+
+    .game-btns {
+        font-size: 15px;
     }
 }
 
@@ -275,6 +307,16 @@ header {
     }
 }
 
+@media (max-width:1024px) {
+    .space {
+        width: 230px;
+    }
+
+    .tabs-label {
+        margin: 8px;
+    }
+}
+
 /* CONTENT INSIDE TABS */
 hr {
     margin: 30px 0;
@@ -348,6 +390,12 @@ iframe {
     height: 35vw;
     border-radius: 20px;
     margin-top: 20px;
+}
+
+@media (max-width:1880px) {
+    .v-image {
+        width: 265px;
+    }
 }
 
 @media (max-width:1430px) {
