@@ -55,6 +55,28 @@ header {
     padding: 2.3em 0 0 8.5em;
 }
 
+@media (max-width:1430px) {
+    header, .header-txt {
+        height: 35vh;
+    }
+
+    #game-title {
+        padding-left: 6.8em;
+    }
+}
+
+@media (max-width:1239px) {
+    #game-title {
+        padding: 8% 0 0 6.3em;
+    }
+}
+
+@media (max-width:1115px) {
+    #game-title {
+        padding: 9% 0 0 6em;
+    }
+}
+
 /* CONTENT */
 .game {
     position: absolute;
@@ -184,6 +206,51 @@ header {
     .tabs-content { order: 1; }
 }
 
+@media (max-width:1430px) {
+    .space {
+        width: 350px;
+    }
+
+    .tabs-label {
+        padding: 15px 20px;
+        margin: 15px;
+    }
+
+    .tabs-content {
+        border-top: 25px solid #1B1919;
+    }
+
+    .tabs {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1239px) {
+    .space {
+        width: 330px;
+    }
+
+    .tabs-label {
+        padding: 15px 20px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .tabs {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1115px) {
+    .space {
+        width: 300px;
+    }
+
+    .tabs-label {
+        padding: 15px;
+    }
+}
+
 /* CONTENT INSIDE TABS */
 hr {
     margin: 30px 0;
@@ -250,6 +317,19 @@ h3 {
     width: 100%;
     border-radius: 20px;
     margin: 20px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 35vw;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width:1430px) {
+    .filler {
+        display: none;
+    }
 }
 
 /* INSIDE TABS */
