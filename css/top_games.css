@@ -26,12 +26,28 @@ header {
     top: 0;
     width: 100%;
     height: 80vh;
-    padding: 8em 20px;
+    padding: 11% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
 h1 {
     font-size: 90px;
+}
+
+@media (max-width:1430px) {
+    .header-txt {
+        padding: 6% 20px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width:1239px) {
+    h1 {
+        font-size: 60px;
+    }
 }
 
 /*BUTTON TOP GAMES*/
@@ -56,33 +72,6 @@ h1 {
     background: #ddc700;
 }
 
-@media (max-width: 1290px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 500px) {
-    .header-txt {
-        padding: 10em 0;
-    }
-
-    h1 {
-        font-size: 45px;
-        padding: 0 20px;
-        line-height: 50px;
-    }
-
-    p {
-        font-size: 14px;
-        padding: 0 20px;
-    }
-}
-
 /* CONTENT */
 .valorant {
     background: url('/images/top_games/valorantbg.jpg') no-repeat center center;
@@ -102,7 +91,7 @@ h1 {
     width: 100%;
     height: 80vh;
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%);
-    padding: 100px;
+    padding: 5% 100px;
     border-radius: 0 0 100px 0;
 }
 
@@ -176,75 +165,45 @@ h1 {
     position: relative;
 }
 
-@media (max-width: 1880px) {
-    .header-txt {
-        padding: 3.4em 20px;
-    }
-
+@media (max-width:1430px) {
     .valorant,
-    .callofduty,
     .minecraft,
     .pubg,
-    .csgo {
-        height: 120vh;
+    .game-gradient {
+        height: 100vh;
+    }
+
+    .callofduty, .csgo, #longer-gradient {
+        height: 110vh;
     }
 
     .game-img {
-        width: 25%;
-        height: 500px;
+        height: 380px;
         border: 10px solid var(--color-text);
-    }
-
-    .game-gradient {
-        padding: 70px 50px;
-        height: 120vh;
     }
 }
 
-@media (max-width: 1200px) {
-    .header-txt {
-        padding: 3.5em 20px;
-    }
-
-    .valorant,
-    .callofduty,
-    .minecraft,
-    .pubg,
-    .csgo {
-        height: 90vh;
-    }
-
+@media (max-width:1239px) {
     .game-title {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 60px;
     }
 
-    .game-img {
-        width: 25%;
-        height: 350px;
-        border: 10px solid var(--color-text);
-    }
-
-    .game-gradient {
-        padding: 70px 50px;
-        height: 90vh;
+    .game-text p {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 800px) {
-    .game-img {
-        width: 30%;
-        height: 350px;
-        border: 10px solid var(--color-text);
-        margin: 0 3% 0 3%;
-    }
-
+@media (max-width:1115px) {
     .game-gradient {
-        padding: 70px 50px;
+        padding: 5% 50px;
     }
 
-    .btn {
-        display: none;
+    .game-img {
+        margin: 0 4%;
+    }
+
+    .game-text {
+        margin-left: 4%;
     }
 }
 

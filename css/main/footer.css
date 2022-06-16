@@ -113,6 +113,12 @@ input[type=text] {
     .col-2, .col-3, .col-4 { padding: 0; }
 }
 
+@media (max-width:500px) {
+    .col-1 p {
+        text-align: center;
+    }
+}
+
 @media (max-width: 400px) {
     .subscribe { display: block; }
     .subscribe-btn { margin-top: 10px; }
