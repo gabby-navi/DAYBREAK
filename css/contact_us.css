@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 80vh;
+    height: 43vw;
     width: 100%;
     overflow: hidden;
     background: url('/images/contact_us/cu_minecraft.png') no-repeat center center;
@@ -26,12 +26,12 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    height: 80vh;
+    height: 43vw;
     padding: 13% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
-h1 { font-size: 100px; font-weight: 900px; }
+h1 { font-size: 7vw;  line-height: 130%;}
 
 @media (max-width: 1430px) {
     .h1 {
@@ -52,7 +52,8 @@ h1 { font-size: 100px; font-weight: 900px; }
     background-color: var(--color-primary);
     padding: 100px 200px;
     border-radius: 0 0 100px 0;
-    margin-bottom: 150px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     color: var(--color-text);
 }
 

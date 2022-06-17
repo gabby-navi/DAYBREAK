@@ -30,7 +30,7 @@ footer p {
 }
 
 .col-2, .col-3, .col-4 { padding: 0 20px; }
-#grid p, ul li { font-size: 18px; }
+#grid p, ul li { font-size: 21px; }
 
 .subscribe {
     display: grid;
@@ -78,7 +78,7 @@ input[type=text] {
 }
 
 .footest ul li {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 @media (max-width: 1290px) {
