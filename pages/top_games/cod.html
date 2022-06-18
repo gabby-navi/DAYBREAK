@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DAYBREAK</title>
 
+        <link rel="icon" href="/images/DB.png">
         <link rel="stylesheet" href="/css/top_games/cod.css">
         <link rel="stylesheet" href="/css/main/main.css">
         <link rel="stylesheet" href="/css/main/navbar.css">
@@ -396,18 +397,18 @@
         <footer>
             <div id="grid">
                 <div class="col-1">
-                    <div class="logo"><a href="/pages/home_page.html">DAYBREAK</a></div>
+                    <div class="logo"><a href="Homepage.html">DAYBREAK</a></div>
                     <div class="f-subtitle">About</div>
                     <p>Our Website provide the most recent game-related news, as well as blog posts, changes, and other updates.</p>
                 </div>
                 <div class="col-2">
                     <div class="f-subtitle">Quick Links</div>
                     <ul>
-                        <li><a href="/pages/home_page.html">Home</a></li>
-                        <li><a href="/pages/top_games.html">Top Games 2022</a></li>
-                        <li><a href="/pages/creators_pick.html">Creator's Picks</a></li>
-                        <li><a href="/pages/about_us.html">About Us</a></li>
-                        <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                        <li><a href="/Homepage/Homepage.html">Home</a></li>
+                        <li><a href="/TopGames/TopGames.html">Top Games 2022</li></a>
+                        <li><a href="/Creator's Pick/CreatorsPick.html">Creator's Picks</a></li>
+                        <li><a href="/AboutUs/AboutUs.html">About Us</li></a>
+                        <li><a href="/ContactUs/ContactUs.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -418,9 +419,19 @@
                 <div class="col-4">
                     <div class="f-subtitle">Subscribe to our Newsletter</div>
                     <div class="subscribe">
-                        <input type="text" class="subscribe-form" id="email" placeholder="Email" />
-                        <button class="subscribe-btn">Subscribe</button>
+                        <input type="text" class="subscribe-form" id="email" placeholder="Email" style="margin: 0;"/>
+                        <!-- <button class="subscribe-btn">Subscribe</button> -->
+                        <a class="subscribe-btn" href="#popup2" id="subscribe-btn"> Subscribe</a> 
                     </div>
+                    <div id="popup2" class="overlay">
+                        <div class="popup2">
+                            <a class="close" href="#grid">&times;</a>
+                            <h2>Subscribe to DAYBREAK</h2>
+                            <div class="content">
+                               Thank you for Subscribing to DAYBREAK.
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
             <div class="footest">
@@ -430,5 +441,6 @@
                 </ul>
             </div>
         </footer>
+        
     </body>
 </html>

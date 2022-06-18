@@ -5,7 +5,7 @@
 }
 
 header {
-    height: 80vh;
+    height: 43vw;
     width: 100%;
     overflow: hidden;
     background: url('/images/home_page/home_header.jpg') no-repeat center center;
@@ -20,12 +20,12 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    height: 80vh;
-    padding: 13% 100px;
+    height: 43vw;
+    padding: 15% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
-h1 { font-size: 90px; }
+h1 { font-size: 5vw; }
 
 @media (max-width:1880px) {
     .header-txt {
@@ -94,9 +94,9 @@ h1 { font-size: 90px; }
 .img1 {
     position: relative;
     width: 20%;
-    height: 25%;
+    height: 35vw;
     object-fit: cover;
-    margin: 10px;
+    margin: 1vw;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -104,7 +104,7 @@ h1 { font-size: 90px; }
 .img2 {
     position: relative;
     width: 20%;
-    height: 85vh;
+    height: 40vw;
     object-fit: cover;
     margin: 10px;
     border-radius: 10px;
@@ -113,7 +113,8 @@ h1 { font-size: 90px; }
 
 .top5-text {
     width: 50%;
-    margin-left: 5%;
+    margin-left: 5vw;
+    margin-right: -100vw;
     color: var(--color-text);
     text-align: right;
 }
@@ -169,7 +170,7 @@ h2 {
 .cp-tips {
     text-align: center;
     width: auto;
-    height: 55vw;
+    height: 65vw;
     border: 1px solid black;
     background-image: url("/images/home_page/hp_tips.jpg");
     background-position: center center;
@@ -185,14 +186,14 @@ h2 {
     left: 0;
     top: 0;
     width: auto;
-    height: 55vw;
+    height: 75vw;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
     padding: 5% 150px;
 }
 
 .tips-text {
     color: var(--color-text);
-    padding-top: 15%;
+    padding-top: 15vw;
 }
 
 .tips {
@@ -277,7 +278,7 @@ h2 {
 .mid-content {
     background-color: var(--color-primary);
     width: 100%;
-    padding: 100px 150px;
+    padding: 10vw 7vw;
     border-radius: 100px 0 100px 0;
     margin-top: -100px;
     grid-area: about;
@@ -299,9 +300,9 @@ h2 {
 .img4 {
     position: relative;
     width: 20%;
-    height: 60vh;
+    height: 35vw;
     object-fit: cover;
-    margin: 100px 10px 10px 10px;
+    margin: 2vw 1vw 1vw 1vw;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -309,15 +310,15 @@ h2 {
 .img3 {
     position: relative;
     width: 20%;
-    height: 70vh;
+    height: 30vw;
     object-fit: cover;
-    margin: 10px 10px 40px 10px;
+    margin: 2vw 10px 1px 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 #au-text {
-    margin-bottom: 50px;
+    margin-bottom: 5vw;
 }
 
 @media (max-width:1024px) {
@@ -329,7 +330,7 @@ h2 {
 /* CONTACT US */
 .contactus {
     width: auto;
-    height: 50vw;
+    height: 55vw;
     border: 1px solid black;
     background-position: center center;
     background-repeat: no-repeat;
@@ -345,10 +346,10 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 50vw;
+    width: auto;
+    height: 55vw;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
-    padding: 15% 150px;
+    padding: 20vw 150px;
 }
 
 .contact-text {
@@ -361,10 +362,10 @@ h2 {
     border-radius: 10px 10px 10px 100px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     object-fit: cover;
-    border: 15px solid #FFFFFF;
-    width: 25%;
-    height: 500px;
-    margin: 0 10% 0 5%;
+    border: .5vw solid #FFFFFF;
+    width: 25vw;
+    height: 25vw;
+    margin: 0 5vw 0 5vw;
 }
 
 .contactus-text {
