@@ -19,8 +19,7 @@ header {
 }
 
 .header-txt {
-    text-align: center;
-    
+    text-align: center;  
     color: var(--color-text);
     position: absolute;
     left: 0;
@@ -116,28 +115,6 @@ textarea {
     font-size: 16px;
     resize: none;
 }
-
-/* input[type=submit]  {
-    width: 50%;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 15px 30px 15px 10px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 10px 10px 100px 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    float: right;
-    
-}
-
-input[type=submit]:hover {
-    background-color: #ddc700;
-    
-} */
   
 .info {
     margin-top: 15px;
@@ -157,11 +134,8 @@ input[type=submit]:hover {
     align-items: center;
 }
 
-/* modal pop up*/
-
-
+/* MODAL POP UP */
 .submit {
-
     width: 50%;
     color: var(--color-primary);
     background-color: var(--color-secondary);
@@ -175,7 +149,8 @@ input[type=submit]:hover {
     cursor: pointer;
     text-transform: uppercase;
     float: right;
-  }
+    text-align: center;
+}
 
 #submit{
     color: var(--color-primary);
@@ -184,7 +159,6 @@ input[type=submit]:hover {
 .submit:hover {
   background-color: #ddc700;
 }
-
 
 .overlay {
     position: fixed;
@@ -197,13 +171,14 @@ input[type=submit]:hover {
     visibility: hidden;
     opacity: 0;
     z-index: 1;
-    
-  }
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  .popup {
+}
+
+.popup {
     margin: 250px auto;
     padding: 5px;
     background-color: var(--color-text);
@@ -211,18 +186,18 @@ input[type=submit]:hover {
     width: 40%;
     position: relative;
     transition: all 0.5s ease-in-out;
-  }
-  .popup h2 {
+}
+
+.popup h2 {
     margin: 10px;
     margin-top: 2vw;
     margin-left: 32px;
     text-align: left;
     font-family: Jockey One;
     color: var(--color-primary);
-  
-  }
+}
 
-  .popup .close {
+.popup .close {
     position: absolute;
     font-family: Jockey One;
     font-weight: bold;
@@ -232,31 +207,29 @@ input[type=submit]:hover {
     right: 30px;
     transition: all 200ms;
     text-decoration: none;
-    
-    
-  }
-  .popup .close:hover  {
+}
+
+.popup .close:hover  {
     color: var(--color-secondary);
-  }
-  
-  .popup .content {
+}
+
+.popup .content {
     max-height: 30%;
     overflow: auto;
     margin: 20px;
     padding: 40px;
     border-radius: 10px ;
     font-family: Jockey One;
-    
-  }
+}
 
-  
-  @media screen and (max-width: 700px){
+
+@media screen and (max-width: 700px){
     .box{
-      width: 70%;
+        width: 70%;
     }
     .popup{
-      width: 70%;
+        width: 70%;
     }
-  }
+}
 
 
