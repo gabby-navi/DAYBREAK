@@ -72,9 +72,9 @@ h1 {
     border: 5px solid #FFFFFF;
     border-radius: 50%;
     background-color: var(--color-secondary);
-    width: 70px;
-    height: 70px;
-    font-size: 35px;
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     cursor: pointer;
@@ -86,6 +86,12 @@ h1 {
 
 .btn:hover {
     background: #ddc700;
+}
+
+@media (max-width:1024px) {
+    .btn {
+        border: 3px solid #FFFFFF;
+    }
 }
 
 /* CONTENT */
@@ -223,17 +229,10 @@ h1 {
     .valorant,
     .minecraft,
     .pubg,
+    .callofduty, 
+    .csgo,
     .game-gradient {
-        height: 100vh;
-    }
-
-    .callofduty, .csgo, #longer-gradient {
-        height: 110vh;
-    }
-
-    .game-img {
-        height: 380px;
-        border: 10px solid var(--color-text);
+        height: 95vh;
     }
 }
 
@@ -245,15 +244,25 @@ h1 {
     .game-text p {
         font-size: 18px;
     }
+
+    .game-image {
+        width: 28vw;
+        height: 36vw;
+    }
 }
 
 @media (max-width:1115px) {
+    .valorant,
+    .minecraft,
+    .pubg,
+    .callofduty, 
+    .csgo,
     .game-gradient {
-        padding: 5% 50px;
+        height: 83vh;
     }
 
-    .game-img {
-        margin: 0 4%;
+    .game-gradient {
+        padding: 5% 50px;
     }
 
     .game-text {
@@ -266,11 +275,11 @@ h1 {
     .minecraft,
     .pubg,
     .game-gradient {
-        height: 80vh;
+        height: 75vh;
     }
 
     .callofduty, .csgo, #longer-gradient {
-        height: 90vh;
+        height: 82vh;
     }
 }
 

@@ -42,7 +42,7 @@ input[type=checkbox] { display: none; }
     user-select: none;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1230px) {
     .menu { 
         display:none;
         position: absolute;

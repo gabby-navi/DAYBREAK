@@ -35,7 +35,7 @@ h1 { font-size: 5vw; }
 .profiles {
     border-radius: 50%;
     border: 5px solid var(--color-text);
-    max-height: 80px;
+    max-height: 5vw;
     margin: 50px 10px 0 10px;
 }
 
@@ -68,6 +68,14 @@ h1 { font-size: 5vw; }
 @media (max-width:1024px) {
     .header-txt {
         padding-top: 12%;
+    }
+
+    .profiles {
+        border: 3px solid var(--color-text);
+    }
+
+    .profiles:hover {
+        border: 3px solid var(--color-secondary);
     }
 }
 

@@ -91,6 +91,12 @@ h1 { font-size: 7vw;  line-height: 130%;}
     padding-left: 50px;
 }
 
+@media (max-width:1024px) {
+    .information {
+        padding-left: 0;
+    }
+}
+
 .contact-form {
     width: 50%;
 }
