@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 80vh;
+    height: 43vw;
     width: 100%;
     overflow: hidden;
     background: url('/images/creators_picks/cp_header.png') no-repeat center center;
@@ -25,12 +25,12 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    height: 80vh;
-    padding: 11% 100px;
+    height: 43vw;
+    padding: 10% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
-h1 { font-size: 90px; }
+h1 { font-size: 5vw; }
 
 .profiles {
     border-radius: 50%;

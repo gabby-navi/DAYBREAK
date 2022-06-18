@@ -5,8 +5,9 @@
 }
 
 header {
-    height: 80vh;
+    height: 37vw;
     width: 100%;
+    padding-top: -10vw;
     overflow: hidden;
     background: url('/images/about_us/header_img.png') no-repeat center center;
     background-size: cover;
@@ -20,16 +21,17 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    height: 80vh;
+    height: 37vw;
     padding: 10% 100px;
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
 .aboutus-title {
     font-family: 'Jockey One', sans-serif;
-    font-size: 150px;
+    font-size: 10vw;
     font-weight: normal;
     line-height: 130%;
+
 }
 
 /* CONTENT */
@@ -77,8 +79,8 @@ header {
 .daybreak {
     font-family: 'Jockey One', sans-serif;
     font-weight: 100;
-    font-size: 80px;
-    width: 30%;
+    font-size: 4vw;
+    width: 25vw;
     line-height: 160%;
     color: #2E2A2A;
     border: 10px solid #2E2A2A;
@@ -89,8 +91,8 @@ header {
 }
 
 .au-text {
-    width: 60%;
-    padding-left: 20%;
+    width: 50%;
+    padding-left: 10%;
     color: var(--color-text);
 }
 
@@ -145,7 +147,7 @@ h2 { font-size: 50px; }
 /* HOW WE STARTED */
 .hws {
     width: auto;
-    height: 45vw;
+    height: 50vw;
     border: 1px solid black;
     background-image: url("/images/about_us/how_we_started_bg.jpg");
     background-position: center center;
@@ -165,14 +167,14 @@ h2 { font-size: 50px; }
     left: 0;
     top: 0;
     width: 100%;
-    height: 45vw;
+    height: 60vw;
     background-image: linear-gradient(to right, rgba(33, 30, 30, 1) 15%, rgba(33, 30, 30, 0) 100%);
     padding: 100px 150px;
 }
 
 .hws-text {
     color: var(--color-text);
-    padding: 250px 100px 20px 0;
+    padding: 200px 100px 20px 0;
     width: 60%;
 }
 
