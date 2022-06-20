@@ -30,14 +30,7 @@ header {
     background-image: linear-gradient(to top right, rgba(33, 30, 30, 1) 10%, rgba(33, 30, 30, 0) 100%);
 }
 
-h1 { font-size: 7vw;  line-height: 130%;}
-
-@media (max-width: 1430px) {
-    .h1 {
-        font-size: 100px; 
-        font-weight: 900px;
-    }
-}
+h1 { font-size: 5vw;  line-height: 130%;}
 
 @media (max-width:1880px) {
     .header-txt {
