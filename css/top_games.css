@@ -34,16 +34,6 @@ h1 {
     font-size: 5vw;
 }
 
-@media (max-width:1880px) {
-    .header-txt {
-        padding: 6% 20px;
-    }
-
-    h1 {
-        font-size: 70px;
-    }
-}
-
 @media (max-width:1430px) {
     .header-txt {
         padding: 7% 20px;

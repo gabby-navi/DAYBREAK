@@ -34,12 +34,6 @@ header {
 
 }
 
-@media (max-width:1880px) {
-    .header-txt {
-        padding: 6% 20px;
-    }
-}
-
 /* CONTENT */
 .overlaps {
     display: grid;

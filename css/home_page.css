@@ -27,12 +27,6 @@ header {
 
 h1 { font-size: 5vw; }
 
-@media (max-width:1880px) {
-    .header-txt {
-        padding-top: 8%;
-    }
-}
-
 @media (max-width:1430px) {
     .header-txt {
         padding-top: 10%;
@@ -61,6 +55,27 @@ h1 { font-size: 5vw; }
     }
 }
 
+@media (max-width:390px) {
+    header {
+        height: 70vw;
+    }
+    
+    .header-txt {
+        height: 70vw;
+        padding: 13% 30px;
+    }
+
+    h1 {
+        font-size: 10vw;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+} */
+
 /* CONTENT */
 .overlaps {
     display: grid;
@@ -78,9 +93,37 @@ h1 { font-size: 5vw; }
     z-index: 2;
 }
 
+.mid-content {
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 10vw 7vw;
+    border-radius: 100px 0 100px 0;
+    margin-top: -100px;
+    grid-area: about;
+    z-index: 1;
+}
+
 @media (max-width:1430px) {
     .content, .mid-content {
         padding: 100px;
+    }
+}
+
+@media (max-width:1024px) {
+    .mid-content {
+        padding: 80px;
+    }
+}
+
+@media (max-width:390px) {
+    .content {
+        padding: 40px;
+        border-radius: 0 0 50px 0;
+    }
+    
+    .mid-content {
+        padding: 40px;
+        border-radius: 50px 0 50px 0;
     }
 }
 
@@ -130,6 +173,27 @@ h2 {
     }
 }
 
+@media (max-width:390px) {
+    h2 {
+        font-size: 4.5vw;
+        line-height: 130%;
+    }
+
+    .content p, .mid-content p {
+        font-size: 2.5vw;
+    }
+
+    .img1 {
+        border-radius: 5px;
+        height: 45vw;
+    }
+
+    .img2 {
+        border-radius: 5px;
+        height: 50vw;
+    }
+}
+
 /* BUTTONS */
 .button {
     margin-top: 20px;
@@ -164,6 +228,16 @@ h2 {
 
 #right-btn {
     float: right;
+}
+
+@media (max-width:390px) {
+    .button {
+        margin-top: 10px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: 2.5vw;
+    }
 }
 
 /* TIPS */
@@ -266,6 +340,31 @@ h2 {
     }
 }
 
+@media (max-width:390px) {
+    .cp-tips, .tips-gradient {
+        height: 185vw;
+    }
+
+    .tips-gradient {
+        padding: 20px;
+    }
+
+    .cp-tips p {
+        font-size: 2.5vw;
+    }
+
+    .card {
+        padding: 5px;
+        margin: 10px 20px 5px 20px;
+    }
+    
+    .card-title {
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        font-size: 2.5vw;
+    }
+}
+
 /* ABOUT US */
 .overlap {
     display: grid;
@@ -273,16 +372,6 @@ h2 {
     grid-template-rows: auto;
     grid-template-areas: "about" "about" "about" "about" "about" 
                         "contact" "contact" "contact" "contact" "contact";
-}
-
-.mid-content {
-    background-color: var(--color-primary);
-    width: 100%;
-    padding: 10vw 7vw;
-    border-radius: 100px 0 100px 0;
-    margin-top: -100px;
-    grid-area: about;
-    z-index: 1;
 }
 
 .about-us {
@@ -321,9 +410,17 @@ h2 {
     margin-bottom: 5vw;
 }
 
-@media (max-width:1024px) {
-    .mid-content {
-        padding: 80px;
+@media (max-width:390px) {
+    .img4 {
+        width: 20%;
+        height: 75vw;
+        margin: 0;
+    }
+    
+    .img3 {
+        width: 20%;
+        height: 70vw;
+        margin: 0 7px;
     }
 }
 
@@ -397,6 +494,26 @@ h2 {
 @media (max-width:1024px) {
     .contactus, .contact-gradient {
         height: 60vw;
+    }
+}
+
+@media (max-width:390px) {
+    .contactus, .contact-gradient {
+        height: 80vw;
+    }
+
+    .contact-gradient {
+        padding-top: 25%;
+    }
+    
+    .contactus p {
+        font-size: 2.5vw;
+    }
+
+    .img5 {
+        height: 40vw;
+        border-radius: 5px 5px 5px 50px;
+        border: 1vw solid #FFFFFF;
     }
 }
 

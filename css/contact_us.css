@@ -32,12 +32,6 @@ header {
 
 h1 { font-size: 5vw;  line-height: 130%;}
 
-@media (max-width:1880px) {
-    .header-txt {
-        padding-top: 8%;
-    }
-}
-
 @media (max-width: 1430px) {
     .h1 {
         font-size: 100px; 

@@ -43,12 +43,6 @@ h1 { font-size: 5vw; }
     border: 5px solid var(--color-secondary);
 }
 
-@media (max-width:1880px) {
-    .header-txt {
-        padding-top: 6%;
-    }
-}
-
 @media (max-width:1430px) {
     .header-txt {
         padding: 6% 20px;
@@ -79,27 +73,30 @@ h1 { font-size: 5vw; }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 390px) {
     header {
-        height: 50vh;
+        height: 70vw;
     }
     
     .header-txt { 
-        padding: 15% 0; 
+        height: 70vw;
+        padding: 12% 30px;
     }
 
     h1 {
-        font-size: 45px;
-        padding: 0 20px;
-        line-height: 50px;
-    }
-    
-    p {
-        font-size: 14px;
-        padding: 0 20px;
+        font-size: 10vw;
+        line-height: 100%;
+        margin-bottom: 10px;
     }
 
-    .profiles { display: none; }
+    p {
+        font-size: 3vw;
+    }
+
+    .profiles {
+        max-height: 8vw;
+        margin: 20px 5px 0 5px;
+    }
 }
 
 /* CONTENT */
@@ -247,7 +244,11 @@ h1 { font-size: 5vw; }
     .content, .mid-content { padding: 50px; }
 }
 
-@media (max-width: 500px) {   
+@media (max-width: 390px) {   
+    .content, .mid-content {
+        margin-bottom: 50px;
+    }
+
     .card-content {
         padding: 10px;
     }
