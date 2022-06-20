@@ -61,7 +61,7 @@ input[type=text] {
     background-color: transparent;
     border: 1px solid var(--color-text);
     color: var(--color-text);
-    font-size: 21px;
+    font-size: 1.1vw;
     will-change: transform;
 }
 
@@ -81,6 +81,18 @@ input[type=text] {
 
 .footest ul li {
     font-size: .8vw;
+}
+
+@media (max-width:1500px) {
+    .subscribe {
+        grid-template-columns: auto;
+        grid-template-areas: "form" "button";
+        row-gap: 10px;
+    }
+    
+    .subscribe-btn {
+        width: fit-content;
+    }
 }
 
 @media (max-width: 1290px) {
