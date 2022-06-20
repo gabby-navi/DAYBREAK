@@ -20,7 +20,7 @@ footer p {
 }
 
 .f-subtitle {
-    font-size: 23px;
+    font-size: 1.3vw;
     font-weight: bold;
     text-transform: uppercase;
     padding: 15px 0;
@@ -31,7 +31,7 @@ footer p {
 }
 
 .col-2, .col-3, .col-4 { padding: 0 20px; }
-#grid p, ul li { font-size: 20px; }
+#grid p, ul li { font-size: 1vw; }
 
 .subscribe {
     display: grid;
@@ -80,7 +80,7 @@ input[type=text] {
 }
 
 .footest ul li {
-    font-size: 17px;
+    font-size: .8vw;
 }
 
 @media (max-width: 1290px) {
@@ -112,10 +112,8 @@ input[type=text] {
         text-align: center;
     }
 
-    .col-2, .col-3, .col-4 { padding: 0; }
-}
+    .col-1, .col-2, .col-3, .col-4 { padding: 0; }
 
-@media (max-width:500px) {
     .col-1 p {
         text-align: center;
     }
@@ -124,6 +122,33 @@ input[type=text] {
 @media (max-width: 400px) {
     .subscribe { display: block; }
     .subscribe-btn { margin-top: 10px; }
+}
+
+@media (max-width:390px) {
+    #grid {
+        padding: 30px;
+    }
+
+    .f-subtitle {
+        font-size: 3.5vw;
+        padding: 10px 0;
+    }
+
+    #grid p, ul li { font-size: 3vw; }
+
+    input[type=text] {
+        padding: 9px;
+    }
+
+    .subscribe-btn {
+        font-size: 3vw;
+        margin-left: 10px;
+    }
+
+    .footest ul li {
+        font-size: 2.5vw;
+        margin: 0;
+    }
 }
 
 /* MODAL */
