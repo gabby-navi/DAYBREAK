@@ -62,7 +62,7 @@ header {
     font-size: 60px;
     font-weight: bold;
     color: var(--color-text);
-    padding: 2.3em 0 0 8.5em;
+    padding: 2em 0 0 8.5em;
 }
 
 @media (max-width:1430px) {
@@ -214,7 +214,7 @@ header {
 }
 
 .space {
-    width: 480px;
+    width: 450px;
     grid-area: spaces;
 }
 
@@ -233,7 +233,7 @@ header {
 .tabs-radio { display: none; }
 
 .tabs-label {
-    padding: 15px 50px;
+    padding: 15px 30px;
     margin: 10px 20px;
     background: var(--color-text);
     cursor: pointer;
@@ -254,7 +254,7 @@ header {
     display: none;
     padding: 30px 40px;
     border-radius: 0 0 20px 20px;
-    border-top: 50px solid #1B1919;
+    border-top: 30px solid #1B1919;
     width: 100%;
 }
 
