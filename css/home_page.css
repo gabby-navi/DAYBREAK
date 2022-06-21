@@ -55,7 +55,7 @@ h1 { font-size: 5vw; }
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:479px) {
     header {
         height: 70vw;
     }
@@ -74,7 +74,7 @@ h1 { font-size: 5vw; }
     p {
         font-size: 3vw;
     }
-} */
+}
 
 /* CONTENT */
 .overlaps {
@@ -93,37 +93,16 @@ h1 { font-size: 5vw; }
     z-index: 2;
 }
 
-.mid-content {
-    background-color: var(--color-primary);
-    width: 100%;
-    padding: 10vw 7vw;
-    border-radius: 100px 0 100px 0;
-    margin-top: -100px;
-    grid-area: about;
-    z-index: 1;
-}
-
 @media (max-width:1430px) {
-    .content, .mid-content {
+    .content {
         padding: 100px;
     }
 }
 
-@media (max-width:1024px) {
-    .mid-content {
-        padding: 80px;
-    }
-}
-
-@media (max-width:390px) {
+@media (max-width:479px) {
     .content {
         padding: 40px;
         border-radius: 0 0 50px 0;
-    }
-    
-    .mid-content {
-        padding: 40px;
-        border-radius: 50px 0 50px 0;
     }
 }
 
@@ -173,7 +152,7 @@ h2 {
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:479px) {
     h2 {
         font-size: 4.5vw;
         line-height: 130%;
@@ -230,7 +209,7 @@ h2 {
     float: right;
 }
 
-@media (max-width:390px) {
+@media (max-width:479px) {
     .button {
         margin-top: 10px;
         border: 1px solid #FFFFFF;
@@ -245,7 +224,6 @@ h2 {
     text-align: center;
     width: auto;
     height: 65vw;
-    border: 1px solid black;
     background-image: url("/images/home_page/hp_tips.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -340,13 +318,13 @@ h2 {
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:479px) {
     .cp-tips, .tips-gradient {
         height: 185vw;
     }
 
     .tips-gradient {
-        padding: 20px;
+        padding: 10% 20px;
     }
 
     .cp-tips p {
@@ -372,6 +350,35 @@ h2 {
     grid-template-rows: auto;
     grid-template-areas: "about" "about" "about" "about" "about" 
                         "contact" "contact" "contact" "contact" "contact";
+}
+
+.mid-content {
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 10vw 7vw;
+    border-radius: 100px 0 100px 0;
+    margin-top: -100px;
+    grid-area: about;
+    z-index: 1;
+}
+
+@media (max-width:1430px) {
+    .mid-content {
+        padding: 100px;
+    }
+}
+
+@media (max-width:1024px) {
+    .mid-content {
+        padding: 80px;
+    }
+}
+
+@media (max-width:479px) { 
+    .mid-content {
+        padding: 40px;
+        border-radius: 50px 0 50px 0;
+    }
 }
 
 .about-us {
@@ -410,7 +417,7 @@ h2 {
     margin-bottom: 5vw;
 }
 
-@media (max-width:390px) {
+@media (max-width:479px) {
     .img4 {
         width: 20%;
         height: 75vw;
@@ -497,7 +504,7 @@ h2 {
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:479px) {
     .contactus, .contact-gradient {
         height: 80vw;
     }

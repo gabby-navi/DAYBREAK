@@ -45,6 +45,26 @@ h1 { font-size: 5vw;  line-height: 130%;}
     }
 }
 
+@media (max-width:479px) {
+    header {
+        height: 70vw;
+    }
+    
+    .header-txt {
+        height: 70vw;
+        padding: 20% 30px;
+    }
+
+    h1 {
+        font-size: 9vw;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
 /* CONTENT */
 .content {
     background-color: var(--color-primary);
@@ -64,6 +84,14 @@ h1 { font-size: 5vw;  line-height: 130%;}
 @media (max-width: 1239px) {
     .content {
         padding: 70px;
+    }
+}
+
+@media (max-width:479px) {
+    .content {
+        padding: 50px;
+        border-radius: 0 0 50px 0;
+        text-align: center;
     }
 }
 
@@ -125,6 +153,57 @@ textarea {
     grid-template-rows: repeat(3, auto);
     gap: 10px;
     align-items: center;
+}
+
+@media (max-width:479px) {
+    h2 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    .information {
+        flex: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        flex: 100%;
+    }
+
+    input[type=text], select {
+        font-size: 2vw;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        height: 100px;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        font-size: 2vw;
+    }
+      
+    .info {
+        margin-top: 15px;
+    }
+    
+    .icon {
+        height: 20px;
+        padding-left: 60%;
+    }
+
+    .infos {
+        grid-template-columns: .5fr 1fr;
+        margin: 0 20px;
+    }
+    
+    .infos p {
+        text-align: left;
+    }
 }
 
 /* MODAL POP UP */
@@ -222,6 +301,15 @@ textarea {
     }
     .popup{
         width: 70%;
+    }
+}
+
+@media (max-width:479px) {
+    .submit {
+        font-size: 3vw;
+        padding: 10px 15px 10px 5px;
+        margin: 0;
+        border-radius: 5px 5px 35px 5px;
     }
 }
 
