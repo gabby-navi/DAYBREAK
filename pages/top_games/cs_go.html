@@ -466,17 +466,20 @@
                     <p>551 M.F. Jhocson Sampaloc,<br>Manila, 1008 Metro Manila
                     <br>daybreak@gmail.com <br>0928 712 1900</p>
                 </div>
-                <div class="col-4">
+                <div class="col-4" >
                     <div class="f-subtitle">Subscribe to our Newsletter</div>
-                    <div class="subscribe">
-                        <input type="text" class="subscribe-form" id="email" placeholder="Email" style="margin: 0;"/>
-                        <!-- <button class="subscribe-btn">Subscribe</button> -->
-                        <a class="subscribe-btn" href="#popup2" id="subscribe-btn"> Subscribe</a> 
+
+                    <div class="subscribe-form">
+                        <form class="subscribe"  action="#popup2"  method="">
+                        <input type="text" class="subscribe-form" id="email" placeholder="Email" style="margin: 0;" required />
+                        <input type="submit"  value="Subscribe" id="subscribe-btn" > 
+                        </form>
                     </div>
+
                     <div id="popup2" class="overlay">
                         <div class="popup2">
-                            <a class="close" href="#grid">&times;</a>
-                            <h2>Subscribe to DAYBREAK</h2>
+                            <a class="close" href="#footest">&times;</a>
+                            <h2>Subscribed to DAYBREAK</h2>
                             <div class="content">
                                Thank you for Subscribing to DAYBREAK.
                             </div>
@@ -484,7 +487,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="footest">
+            <div class="footest" id="footest">
                 <ul>
                     <li>Copyright © 2022 Daybreak. All Rights Reserved.</li>
                     <li>Terms & Conditions | Privacy Policy</li>
