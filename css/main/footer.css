@@ -43,7 +43,6 @@ footer p {
 .subscribe-form {
     grid-area: form;
     font-family: 'Poppins', sans-serif;
-    background-color: #5C5C5C;
     border-radius: 5px;
     padding: 5px;
 }
@@ -52,7 +51,7 @@ input[type=text] {
     padding: 10px;
 }
 
-.subscribe-btn {
+#subscribe-btn {
     grid-area: button;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -65,7 +64,7 @@ input[type=text] {
     will-change: transform;
 }
 
-.subscribe-btn:hover {
+#subscribe-btn:hover {
     color: var(--color-primary);
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
@@ -84,13 +83,13 @@ input[type=text] {
 }
 
 @media (max-width:1500px) {
-    .subscribe {
+    .subscribe-form {
         grid-template-columns: auto;
         grid-template-areas: "form" "button";
         row-gap: 10px;
     }
     
-    .subscribe-btn {
+    #subscribe-btn {
         width: fit-content;
     }
 }
@@ -133,7 +132,7 @@ input[type=text] {
 
 @media (max-width: 400px) {
     .subscribe { display: block; }
-    .subscribe-btn { margin-top: 10px; }
+    #subscribe-btn { margin-top: 10px; }
 }
 
 @media (max-width:390px) {
@@ -152,7 +151,7 @@ input[type=text] {
         padding: 9px;
     }
 
-    .subscribe-btn {
+    #subscribe-btn {
         font-size: 3vw;
         margin-left: 10px;
     }
@@ -234,5 +233,10 @@ input[type=text] {
     }
     .popup{
         width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
+
