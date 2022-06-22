@@ -207,7 +207,7 @@ textarea {
 }
 
 /* MODAL POP UP */
-.submit {
+#submit {
     width: 50%;
     color: var(--color-primary);
     background-color: var(--color-secondary);
@@ -228,7 +228,7 @@ textarea {
     color: var(--color-primary);
 }
 
-.submit:hover {
+#submit:hover {
   background-color: #ddc700;
 }
 
@@ -258,6 +258,7 @@ textarea {
     width: 40%;
     position: relative;
     transition: all 0.5s ease-in-out;
+    
 }
 
 .popup h2 {
@@ -301,6 +302,9 @@ textarea {
     }
     .popup{
         width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -312,5 +316,6 @@ textarea {
         border-radius: 5px 5px 35px 5px;
     }
 }
+
 
 
