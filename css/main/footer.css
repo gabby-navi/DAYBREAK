@@ -148,11 +148,11 @@ input[type=text] {
     .logo {
         font-size: 10vw;
     }
-    
+
     input[type=text] {
         padding: 9px;
     }
-    
+
     .subscribe {
         display: grid;
         grid-template-columns: 70% auto;
@@ -163,7 +163,6 @@ input[type=text] {
 
     #subscribe-btn {
         font-size: 3vw;
-        margin-left: 10px;
     }
 
     .footest ul li {
