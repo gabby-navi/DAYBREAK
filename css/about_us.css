@@ -30,8 +30,21 @@ header {
     font-family: 'Jockey One', sans-serif;
     font-size: 10vw;
     font-weight: normal;
-    line-height: 130%;
+}
 
+@media (max-width:479px) {
+    header {
+        height: 50vw;
+    }
+    
+    .header-txt {
+        height: 50vw;
+        padding: 13% 30px;
+    }
+
+    .aboutus-title {
+        font-size: 15vw;
+    }
 }
 
 /* CONTENT */
@@ -98,12 +111,6 @@ header {
 
 h2 { font-size: 50px; }
 
-@media (max-width: 1880px) {
-    .daybreak {
-        padding-right: 500px;
-    }
-}
-
 @media (max-width: 1430px) {
     .content {
         padding: 100px 110px;
@@ -158,6 +165,36 @@ h2 { font-size: 50px; }
     .daybreak {
         font-size: 50px;
         padding-right: 300px;
+    }
+}
+
+@media (max-width:479px) {
+    .content {
+        padding: 50px;
+        border-radius: 0 0 50px 0;
+    }
+
+    .daybreak {
+        order: 2;
+        text-align: end;
+        font-size: 5vw;
+        width: 100%;
+        line-height: 170%;
+        border: 5px solid #2E2A2A;
+        border-radius: 10px;
+        padding: 20px;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .au-text {
+        order: 1;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 2vw;
     }
 }
 
@@ -218,6 +255,20 @@ h2 { font-size: 50px; }
     }
 }
 
+@media (max-width:479px) {
+    .hws, .hws-gradient {
+        height: 100vw;
+    }
+
+    .hws-gradient {
+        padding: 15% 10%;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+}
+
 /* WHAT WE AIM TO ACHIEVE */
 .achieve-text {
     text-align: center;
@@ -259,6 +310,29 @@ h2 { font-size: 50px; }
 @media (max-width:1239px) {
     .mission-vision {
         padding: 0;
+    }
+}
+
+@media (max-width:479px) {
+    .mid-content {
+        padding: 50px;
+        border-radius: 50px 0 50px 0;
+    }
+
+    .card {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px; 
+    }
+    
+    .card-title {
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        font-size: 2.5vw;
+    }
+
+    .card-body {
+        padding: 0 10px 10px 10px;
     }
 }
 
@@ -328,5 +402,21 @@ h2 { font-size: 50px; }
 @media (max-width: 1024px) {
     .profiles {
         height: 15vh;
+    }
+}
+
+@media (max-width:479px) {
+    .meet, .meet-gradient {
+        height: 92vw;
+        padding: 15% 50px;
+    }
+
+    .profiles {
+        height: 10vh;
+        margin: 5px;
+    }
+
+    .member p {
+        font-size: 2vw;
     }
 }

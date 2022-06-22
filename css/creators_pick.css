@@ -73,7 +73,7 @@ h1 { font-size: 5vw; }
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 479px) {
     header {
         height: 70vw;
     }

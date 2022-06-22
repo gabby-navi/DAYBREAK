@@ -56,6 +56,27 @@ h1 {
     }
 }
 
+@media (max-width:479px) {
+    header {
+        height: 70vw;
+    }
+    
+    .header-txt {
+        height: 70vw;
+        padding: 13% 30px;
+    }
+
+    h1 {
+        font-size: 10vw;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
 /*BUTTON TOP GAMES*/
 .btn {
     color: var(--color-text);
@@ -81,6 +102,15 @@ h1 {
 @media (max-width:1024px) {
     .btn {
         border: 3px solid #FFFFFF;
+    }
+}
+
+@media (max-width:479px) {
+    .btn {
+        width: 8vw;
+        height: 8vw;
+        font-size: 4vw;
+        margin: 25px 5px 0 5px;
     }
 }
 
@@ -204,17 +234,6 @@ h1 {
     position: relative;
 }
 
-@media (max-width: 1880px) {
-    .valorant,
-    .minecraft,
-    .pubg,
-    .callofduty, 
-    .csgo,
-    .game-gradient {
-        height: 120vh;
-    }
-}
-
 @media (max-width:1430px) {
     .valorant,
     .minecraft,
@@ -273,6 +292,51 @@ h1 {
     }
 }
 
+@media (max-width:479px) {
+    .game-info {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .game-image {
+        width: 40vw;
+        height: 55vw;
+        border: 8px solid var(--color-text);
+    }
+
+    .game-text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .rank {
+        margin: 5px;
+    }
+    
+    .ranking {
+        padding: 10px 20px 10px 15px;
+        font-weight: 800;
+        font-size: 4vw;
+    }
+
+    .game-gradient, #longer-gradient {
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    .valorant { height: 86vh; }
+    .callofduty { height: 94vh; }
+    .minecraft, .pubg { height: 80vh; }
+    .csgo { height: 111vh; }
+
+    .pubg .game-title {
+        font-size: 50px;
+        line-height: 100%;
+    }
+
+    
+}
+
 /* BUTTON */
 .button {
     margin-top: 20px;
@@ -308,4 +372,16 @@ h1 {
 #right-btn {
     float: right;
     margin-top: 50px;
+}
+
+@media (max-width:479px) {   
+    .button {
+        border-radius: 5px;
+        padding: 10px 30px;
+        font-size: 3vw;
+    }
+
+    #right-btn {
+        margin-top: 20px;
+    }
 }
