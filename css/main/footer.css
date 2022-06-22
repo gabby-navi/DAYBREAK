@@ -18,6 +18,10 @@ footer p {
     padding: 50px;
 }
 
+.logo {
+    font-size: 3vw;
+}
+
 .f-subtitle {
     font-size: 1.3vw;
     font-weight: bold;
@@ -129,12 +133,7 @@ input[type=text] {
     }
 }
 
-@media (max-width: 400px) {
-    .subscribe { display: block; }
-    #subscribe-btn { margin-top: 10px; }
-}
-
-@media (max-width:390px) {
+@media (max-width:479px) {
     #grid {
         padding: 30px;
     }
@@ -146,8 +145,20 @@ input[type=text] {
 
     #grid p, ul li { font-size: 3vw; }
 
+    .logo {
+        font-size: 10vw;
+    }
+    
     input[type=text] {
         padding: 9px;
+    }
+    
+    .subscribe {
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-template-areas: "form button";
+        column-gap: 10px;
+        padding: 0 20px;
     }
 
     #subscribe-btn {
