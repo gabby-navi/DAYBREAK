@@ -119,11 +119,9 @@ h1 { font-size: 5vw;  line-height: 130%;}
 input[type=text], select {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    width: 100%;
     padding: 15px 20px;
     margin: 15px 0;
     display: inline-block;
-    border-radius: 10px;
 }
 
 textarea {
